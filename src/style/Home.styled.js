@@ -17,6 +17,8 @@ export const LeftSide = styled.div`
 `;
 
 export const RightSide = styled.div`
-width: 50%;
+    width: 50%;
+    text-align: center;
+    padding-top: 350px;
 `;
 

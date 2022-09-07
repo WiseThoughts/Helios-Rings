@@ -40,6 +40,11 @@ function Home() {
       </SplitPage>
 
 
+    <div>
+      <h4>Have a Look at what people are saying...</h4>
+    </div>
+
+
     <Footer />
 
     </div>
