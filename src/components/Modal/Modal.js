@@ -4,7 +4,7 @@ import { ModalBackground, CloseButton, ModalBox, ModalImage } from './Modal.styl
 
 
 
-const Modal = ({RingModal, SetRingModal, RingImage}) => {
+const Modal = ({RingModal, SetRingModal, RingImage, RingDes}) => {
 
 
     function scroll(){
@@ -16,6 +16,7 @@ const Modal = ({RingModal, SetRingModal, RingImage}) => {
         <ModalBackground />
             <ModalBox>
             <ModalImage src={RingImage} alt="ring" />
+            <p>{RingDes}</p>
 
             <CloseButton onClick={()=>{SetRingModal(false); scroll()}}>Close</CloseButton>
             </ModalBox>

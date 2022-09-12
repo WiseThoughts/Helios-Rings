@@ -24,7 +24,7 @@ const Contact = () => {
         {
         id:1,
         imgsrc:Ring2,
-        ringdes:"trail"
+        ringdes:"trail: ring 2"
         },
         {
         id:2,
@@ -80,7 +80,7 @@ const Contact = () => {
         </div>
 
         <div>
-            <Modal {...{RingModal, SetRingModal, RingImage}} />
+            <Modal {...{RingModal, SetRingModal, RingImage, RingDes}} />
         </div>
 
         <Images >
