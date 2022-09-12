@@ -13,8 +13,8 @@ const Nav = () => {
     <Wrapper className="sizing">
         <Logo src={logo} />
         <Link className="navBarLinks" to="/"><NavbarItems>Home</NavbarItems></Link>
-        <Link className="navBarLinks" to="/Collection"><NavbarItems>Collection</NavbarItems></Link>
-        <Link className="navBarLinks" to="/Contact"><NavbarItems>Contact</NavbarItems></Link>
+        <Link className="navBarLinks" to="/collection"><NavbarItems>Collection</NavbarItems></Link>
+        <Link className="navBarLinks" to="/contact"><NavbarItems>Contact</NavbarItems></Link>
     </Wrapper>
 );
 };
