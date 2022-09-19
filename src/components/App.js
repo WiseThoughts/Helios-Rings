@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./Home.js";
-import Collection from "./Collection.js";
+import Collection from "./Collection";
 import Contact from "./Contact.js";
 import "../style/App.css";
 

@@ -1,5 +1,6 @@
 
-import { ModalBackground, CloseButton, ModalBox, ModalImage } from './Modal.styling'
+import { Link } from 'react-router-dom';
+import { ModalBackground, ModalButtons, ModalBox, ModalImage, TextBox } from './Modal.styling'
 
 
 
@@ -11,14 +12,18 @@ const Modal = ({RingModal, SetRingModal, RingImage, RingDes}) => {
         document.body.style.overflow="";
     }
 
+
     return RingModal ? (
     <div>
         <ModalBackground />
             <ModalBox>
-            <ModalImage src={RingImage} alt="ring" />
-            <p>{RingDes}</p>
-
-            <CloseButton onClick={()=>{SetRingModal(false); scroll()}}>Close</CloseButton>
+                <ModalImage src={RingImage} alt="ring" />
+                    <TextBox>
+                        <p>{RingDes}</p>
+                        <ModalButtons><Link to={{pathname: '/contact'}}>Contact Me</Link></ModalButtons>
+                        <ModalButtons>Shop</ModalButtons>
+                        <ModalButtons onClick={()=>{SetRingModal(false); scroll()}}>Close</ModalButtons>
+                    </TextBox>
             </ModalBox>
 
     </div>

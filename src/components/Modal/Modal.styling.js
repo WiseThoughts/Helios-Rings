@@ -12,6 +12,8 @@ export const ModalBackground = styled.div`
 `;
 
 export const ModalBox = styled.div`
+  display: flex;
+  flex-direction: row;
   background: white;
   width: 75%;
   min-height: 35vw;
@@ -20,10 +22,12 @@ export const ModalBox = styled.div`
   border-radius: 0.5rem;
   top: 17.5%;
   left: 10%;
-`;
+`
 
-export const CloseButton = styled.button`
+export const ModalButtons = styled.button`
+  justify-content: center;
   height: 2rem;
+  font-size: 15px;
   display: inline-block;
   background: black;
   border: none;
@@ -31,17 +35,23 @@ export const CloseButton = styled.button`
   font-weight: bold;
   width: 10rem;
   gap: 10px;
+  margin: 3px;
   &:hover{
     cursor: pointer;
+    color: red;
   }
 `
 
 export const ModalImage = styled.img`
-  width: 400px;
+  width: 60%;
   object-fit: cover;
   border: 5px solid black;
-  margin: 3px;
-  &:hover{
-    border: 5px solid red;
-  }
+  margin: 5px;
+`
+
+export const TextBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `

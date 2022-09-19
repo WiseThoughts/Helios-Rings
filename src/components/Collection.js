@@ -60,6 +60,25 @@ const Contact = () => {
         id:8,
         imgsrc:Ring3,
         ringdes:"trail"
+        },
+        {id:9,
+        imgsrc:Ring6,
+        ringdes:"trail"
+        },
+        {
+        id:10,
+        imgsrc:Ring7,
+        ringdes:"trail"
+        },
+        {
+        id:11,
+        imgsrc:Ring2,
+        ringdes:"trail"
+        },
+        {
+        id:12,
+        imgsrc:Ring3,
+        ringdes:"trail"
         }
     ]
 
