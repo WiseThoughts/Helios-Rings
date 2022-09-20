@@ -16,7 +16,7 @@ import Ring6 from "../images/ringtwo.jpg"
 function Home() {
 
     const ReviewArray =[
-        { productImg: Ring2, review: "Delighted with the ring, will be ordering many more", name: "Jasmin F"},
+        { productImg: Ring2, review: "-Delighted with the ring, will be ordering many more-", name: "-Jasmin F-"},
         { productImg: Ring3, review: "lovely piece", name: "Becky B"},
         { productImg: Ring4, review: "Fantastic craftmenship", name: "James N"},
         { productImg: Ring5, review: "Can't be beaten", name: "Alex D"},

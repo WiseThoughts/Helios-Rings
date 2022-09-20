@@ -1,6 +1,7 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { IoChevronBackSharp, IoChevronForwardSharp } from "react-icons/io5";
-import { ReviewBackground, ReviewImage } from "../style/Reviews.styled";
+import { Backward, Forward, ReviewBackground, ReviewImage, ReviewContent, ReviewText, ReviewName} from "../style/Reviews.styled";
 
 
 function Reviews({ReviewArray}) {
@@ -25,12 +26,25 @@ function Reviews({ReviewArray}) {
         <div>
             <ReviewImage src={ReviewArray[currentSlide].productImg}></ReviewImage>
         </div>
+
+        <ReviewContent>
         <div>
-            <h3>{ReviewArray[currentSlide].review}</h3>
-            <h5>{ReviewArray[currentSlide].name}</h5>
+            <ReviewText>{ReviewArray[currentSlide].review}</ReviewText>
+            <ReviewName>{ReviewArray[currentSlide].name}</ReviewName>
         </div>
-        <div onClick={back}><IoChevronBackSharp /></div>
-        <div onClick={forward}><IoChevronForwardSharp/></div>
+
+        <div>
+            <h5>For custom quotes or any other questions please contact me</h5>
+            <button><Link to={{pathname: "/contact"}}> Contact Me</Link></button>
+        </div>
+        <div>
+            <h5>Or to browse though my past rings</h5>
+            <button><Link to={{pathname: "/collection"}}> View the Collection</Link></button>
+        </div>
+        </ReviewContent>
+
+        <Backward onClick={back}><IoChevronBackSharp /></Backward>
+        <Forward onClick={forward}><IoChevronForwardSharp/></Forward>
         <div>
 
         </div>
