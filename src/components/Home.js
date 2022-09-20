@@ -1,14 +1,27 @@
 import Nav from "./Nav";
+import Reviews from "./Reviews";
 import '../style/Home.css';
 import Footer from "./Footer";
 import Placeholder from "../images/ringplaceholder.jpg"
 import {SplitPage, Splitimg, LeftSide, RightSide } from '../style/Home.styled'
 import { Link } from "react-router-dom";
 
+import Ring2 from "../images/ringfive.jpg"
+import Ring3 from "../images/ringfour.jpg"
+import Ring4 from "../images/ringone.jpg"
+import Ring5 from "../images/ringthree.jpg"
+import Ring6 from "../images/ringtwo.jpg"
+
 
 function Home() {
 
-
+    const ReviewArray =[
+        { productImg: Ring2, review: "Delighted with the ring, will be ordering many more", name: "Jasmin F"},
+        { productImg: Ring3, review: "lovely piece", name: "Becky B"},
+        { productImg: Ring4, review: "Fantastic craftmenship", name: "James N"},
+        { productImg: Ring5, review: "Can't be beaten", name: "Alex D"},
+        { productImg: Ring6, review: "My new EDC ring", name: "Benny Y"},
+    ];
 
     return (
         <div>
@@ -44,6 +57,9 @@ function Home() {
 
         <div>
             <h4>Have a Look at what people are saying...</h4>
+            <div>
+                <Reviews ReviewArray={ReviewArray} />
+            </div>
         </div>
 
 
