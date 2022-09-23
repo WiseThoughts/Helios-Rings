@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { IoChevronBackSharp, IoChevronForwardSharp } from "react-icons/io5";
-import { Backward, Forward, ReviewBackground, ReviewImage, ReviewContent, ReviewText, ReviewName} from "../style/Reviews.styled";
+import { Backward, Forward, ReviewBackground, ReviewImage, ReviewContent, ReviewText, ReviewName, ReviewHeader, ReviewDirect, ReviewButtons} from "../style/Reviews.styled";
 
 
 function Reviews({ReviewArray}) {
@@ -23,6 +23,9 @@ function Reviews({ReviewArray}) {
     <div>
 
         <ReviewBackground>
+            <div>
+                <ReviewHeader>Have a look at what customers are saying...</ReviewHeader>
+            </div>
         <div>
             <ReviewImage src={ReviewArray[currentSlide].productImg}></ReviewImage>
         </div>
@@ -34,12 +37,12 @@ function Reviews({ReviewArray}) {
         </div>
 
         <div>
-            <h5>For custom quotes or any other questions please contact me</h5>
-            <button><Link to={{pathname: "/contact"}}> Contact Me</Link></button>
+            <ReviewDirect>For custom quotes or any other questions please contact me</ReviewDirect>
+            <ReviewButtons><Link to={{pathname: "/contact"}}> Contact Me</Link></ReviewButtons>
         </div>
         <div>
-            <h5>Or to browse though my past rings</h5>
-            <button><Link to={{pathname: "/collection"}}> View the Collection</Link></button>
+            <ReviewDirect>Or to browse though my past rings</ReviewDirect>
+            <ReviewButtons><Link to={{pathname: "/collection"}}> View the Collection</Link></ReviewButtons>
         </div>
         </ReviewContent>
 

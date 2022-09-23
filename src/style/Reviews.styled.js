@@ -12,7 +12,8 @@ export const ReviewImage = styled.img`
     margin: 5px;
     border: 15px double black; 
     postion: relative;
-    transform: translate(50%, 15%);
+    transform: translate(40%, 5%);
+    background: white;
 `
 export const ReviewContent = styled.div`
     display: flex;
@@ -20,15 +21,17 @@ export const ReviewContent = styled.div`
     width: 750px;
     border: 15px double black; 
     postion: relative;
-    transform: translate(120%, -150%);
+    transform: translate(115%, -102%);
     align-items: center;
+    text-align: center;
+    background: white;
 `
 
 export const Forward = styled.div`
     font-size: 100px;
     width: 50px;
     postion: relative;
-    transform: translate(3500%, -450%);
+    transform: translate(3500%, -650%);
     &:hover {
         cursor: pointer;
     }
@@ -38,17 +41,41 @@ export const Backward = styled.div`
     font-size: 100px;
     width: 50px;
     postion: relative;
-    transform: translate(120%, -350%);
+    transform: translate(120%, -550%);
     &:hover {
         cursor: pointer;
     }
 `
 
+export const ReviewHeader = styled.h2`
+    display: felx;
+    font-size: 45px;
+    justify-content: center;
+    padding: 15px 0px 0px 0px;
+`
+
 export const ReviewText = styled.h3`
-    padding-top: 30px;
-    font-size: 30px;
+    padding: 30px 20px 5px 20px;
+    font-size: 45px;
 `
 
 export const ReviewName = styled.h5`
+    font-size: 25px;
+    padding: 0px 0px 25px 0px;
+`
+
+export const ReviewDirect = styled.h5`
+    text-align: center;
+    padding: 5px 0px 5px 0px;
     font-size: 20px;
+`
+
+export const ReviewButtons = styled.button`
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    border: 8px double white;
+    margin: 5px;
 `

@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
     align-items: center;
     background-color: black;
     padding: 30px;
-    width: 96.8%;
+    width: max-fit;
     position: relative;
     z-index: 0;
     border-bottom: 10px double white;

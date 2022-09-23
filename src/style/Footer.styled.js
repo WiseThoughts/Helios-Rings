@@ -34,8 +34,6 @@ export const FooterLink = styled(Link)`
     font-size: 18px;
     &:hover {
         cursor: pointer;
-        color: gray;
-        transition: 0.3s ease-out;
     }
 `
 
