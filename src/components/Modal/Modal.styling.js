@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const ModalBackground = styled.div`
-  position: absolute;
+  position: fixed;
   opacity: 0.6;
   top: 0;
   left: 0;

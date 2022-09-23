@@ -1,7 +1,9 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Nav from "./Nav";
+import "../style/App.css"
 import { FormDiv, Form, Name, Email, Message, Label, Send, ContactDiv, ContactBox, ConatctOuter } from '../style/Contact.styled';
+import Footer from './Footer';
 
 const Collection = () => {
 
@@ -24,6 +26,7 @@ const Collection = () => {
             <Nav />
         </div>
 
+    <div className='ConatctBackground'>
 
     <ContactDiv>
         <FormDiv>
@@ -46,6 +49,9 @@ const Collection = () => {
     </ConatctOuter>
     </ContactDiv>
 
+    </div>
+
+        <Footer />
 
     </div>
     );
