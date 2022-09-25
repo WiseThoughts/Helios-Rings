@@ -9,14 +9,13 @@ import Ring5 from "../images/ringthree.jpg"
 import Ring6 from "../images/ringtwo.jpg"
 import Ring7 from "../images/ringone.jpg"
 
-import {Images, RImage } from '../style/Collection.styled'
+import {Images, MappedItems, RImage } from '../style/Collection.styled'
 import Footer from "./Footer";
-import Modal from "./Modal/Modal";
 import { useState } from "react";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 
 const Contact = () => {
 
-    const [RingModal, SetRingModal] = useState(false)
     const [RingImage, SetRingImage] = useState()
     const [RingDes, SetRingDes] = useState()
 
@@ -82,15 +81,12 @@ const Contact = () => {
         }
     ]
 
-    function scroll(){
-        document.body.style.overflow="hidden";
-    }
 
     const callImage = (imgsrc, ringdes)=>{
         SetRingImage(imgsrc);
-        SetRingModal(true);
-        SetRingDes(ringdes)
+        SetRingDes(ringdes);
     }
+
 
     return ( 
     <div>
@@ -98,16 +94,14 @@ const Contact = () => {
             <Nav />
         </div>
 
-        <div>
-            <Modal {...{RingModal, SetRingModal, RingImage, RingDes}} />
-        </div>
 
         <Images >
             {rings.map((item, index) =>{
                 return(
-                    <div key={index}>
-                        <RImage src={item.imgsrc} onClick={() => {scroll(); callImage(item.imgsrc, item.ringdes)}} />
-                    </div>
+                <MappedItems key={index}>
+                    <RImage src={item.imgsrc} onClick={() => {callImage(item.imgsrc, item.ringdes)}} />
+                    <button onClick={() => {callImage(item.imgsrc, item.ringdes)}}><Link to={{pathname: "/ring"}} RingImage={RingImage} RingDes={RingDes}>See More Details</Link></button>
+                </MappedItems>
                 )
             })}
         </Images>

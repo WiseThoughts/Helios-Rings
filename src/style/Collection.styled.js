@@ -6,7 +6,12 @@ export const Images = styled.div`
     margin: 20px;
     max-width: 100%;
     justify-content: center;
-`;
+`
+
+export const MappedItems = styled.div`
+    display: flex;
+    flex-direction: column;
+`
 
 export const RImage = styled.img`
     width: 400px;
@@ -17,4 +22,4 @@ export const RImage = styled.img`
         cursor: pointer;
         border: 5px solid red;
     }
-`;
+`
