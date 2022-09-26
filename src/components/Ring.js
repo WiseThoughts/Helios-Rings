@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { RingDisplayImage } from "../style/Ring.styled";
+
 import Nav from "./Nav";
 
 
@@ -6,12 +8,8 @@ const Rings = (RingImage, RingDes) => {
 
     return (
     <div>
-        <div>
-            <Nav />
-        </div>
-
     <div>
-        <img src={RingImage} alt="ring" />
+        <RingDisplayImage src={RingImage} alt="ring" />
         <div>
             {/* <p>{RingDes}</p> */}
             <button><Link to={{pathname: '/contact'}}>Contact Me</Link></button>

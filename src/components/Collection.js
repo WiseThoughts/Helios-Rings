@@ -2,6 +2,7 @@ import "../style/Collection.styled"
 import "../style/collection.css"
 
 import Nav from "./Nav";
+import Ring from "./Ring"
 import Ring2 from "../images/ringfive.jpg"
 import Ring3 from "../images/ringfour.jpg"
 import Ring4 from "../images/ringone.jpg"
@@ -12,12 +13,13 @@ import Ring7 from "../images/ringone.jpg"
 import {Images, MappedItems, RImage } from '../style/Collection.styled'
 import Footer from "./Footer";
 import { useState } from "react";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
 
     const [RingImage, SetRingImage] = useState()
     const [RingDes, SetRingDes] = useState()
+    const [IsShown, SetIsShown] = useState(false)
 
     const rings =[
         {
@@ -87,6 +89,9 @@ const Contact = () => {
         SetRingDes(ringdes);
     }
 
+    const shown = e => {
+        SetIsShown(current => !current)
+    }
 
     return ( 
     <div>
@@ -100,11 +105,14 @@ const Contact = () => {
                 return(
                 <MappedItems key={index}>
                     <RImage src={item.imgsrc} onClick={() => {callImage(item.imgsrc, item.ringdes)}} />
-                    <button onClick={() => {callImage(item.imgsrc, item.ringdes)}}><Link to={{pathname: "/ring"}} RingImage={RingImage} RingDes={RingDes}>See More Details</Link></button>
+                    <button onClick={() => {callImage(item.imgsrc, item.ringdes); shown()}}>show more detail</button>
+                    {IsShown && <Ring RingImage={RingImage} RingDes={RingDes} />}
                 </MappedItems>
                 )
             })}
         </Images>
+
+
 
 
     <div>
