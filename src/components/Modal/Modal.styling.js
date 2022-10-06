@@ -9,19 +9,20 @@ export const ModalBackground = styled.div`
   width: 100vw;
   height: 100vh;
   background: black;
-`;
+`
 
 export const ModalBox = styled.div`
+  position: fixed;
   display: flex;
   flex-direction: row;
   background: white;
   width: 75%;
   min-height: 35vw;
-  position: absolute;
   border: 0.3rem solid black;
   border-radius: 0.5rem;
   top: 17.5%;
   left: 10%;
+  z-index: 10;
 `
 
 export const ModalButtons = styled.button`

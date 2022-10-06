@@ -5,7 +5,7 @@ import { ModalBackground, ModalButtons, ModalBox, ModalImage, TextBox } from './
 
 
 
-const Modal = ({RingModal, SetRingModal, RingImage, RingDes}) => {
+const Modal = ({Modal, SetModal, RingImage, RingDes}) => {
 
 
     function scroll(){
@@ -13,7 +13,7 @@ const Modal = ({RingModal, SetRingModal, RingImage, RingDes}) => {
     }
 
 
-    return RingModal ? (
+    return Modal ? (
     <div>
         <ModalBackground />
             <ModalBox>
@@ -22,7 +22,7 @@ const Modal = ({RingModal, SetRingModal, RingImage, RingDes}) => {
                         <p>{RingDes}</p>
                         <ModalButtons><Link to={{pathname: '/contact'}}>Contact Me</Link></ModalButtons>
                         <ModalButtons>Shop</ModalButtons>
-                        <ModalButtons onClick={()=>{SetRingModal(false); scroll()}}>Close</ModalButtons>
+                        <ModalButtons onClick={()=>{SetModal(false); scroll()}}>Close</ModalButtons>
                     </TextBox>
             </ModalBox>
 

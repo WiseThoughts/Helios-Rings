@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const RingDisplayImage = styled.img`
-    width: 200px;
+    width: 500px;
+    height: 500px;
     border: 4px black solid;
 `

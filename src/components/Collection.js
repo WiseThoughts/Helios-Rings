@@ -9,19 +9,25 @@ import Ring4 from "../images/ringone.jpg"
 import Ring5 from "../images/ringthree.jpg"
 import Ring6 from "../images/ringtwo.jpg"
 import Ring7 from "../images/ringone.jpg"
+import RingModal from "./Modal/Modal";
 
 import {Images, MappedItems, RImage } from '../style/Collection.styled'
 import Footer from "./Footer";
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 
-const Contact = () => {
 
-    const [RingImage, SetRingImage] = useState()
-    const [RingDes, SetRingDes] = useState()
-    const [IsShown, SetIsShown] = useState(false)
 
-    const rings =[
+
+const Collection = () => {
+
+
+    const [RingImage, SetRingImage] = useState();
+    const [RingDes, SetRingDes] = useState();
+    const [Modal, SetModal] = useState(false);
+
+
+
+    const ringArray =[
         {
         id:1,
         imgsrc:Ring2,
@@ -80,6 +86,64 @@ const Contact = () => {
         id:12,
         imgsrc:Ring3,
         ringdes:"trail"
+        },
+        {id:13,
+        imgsrc:Ring2,
+        ringdes:"trail: ring 2"
+        },
+        {
+        id:14,
+        imgsrc:Ring3,
+        ringdes:"trail"
+        },
+        {
+        id:15,
+        imgsrc:Ring4,
+        ringdes:"trail"
+        },
+        {
+        id:16,
+        imgsrc:Ring5,
+        ringdes:"trail"
+        },
+        {
+        id:17,
+        imgsrc:Ring6,
+        ringdes:"trail"
+        },
+        {
+        id:18,
+        imgsrc:Ring7,
+        ringdes:"trail"
+        },
+        {
+        id:19,
+        imgsrc:Ring2,
+        ringdes:"trail"
+        },
+        {
+        id:20,
+        imgsrc:Ring3,
+        ringdes:"trail"
+        },
+        {id:21,
+        imgsrc:Ring6,
+        ringdes:"trail"
+        },
+        {
+        id:22,
+        imgsrc:Ring7,
+        ringdes:"trail"
+        },
+        {
+        id:23,
+        imgsrc:Ring2,
+        ringdes:"trail"
+        },
+        {
+        id:24,
+        imgsrc:Ring3,
+        ringdes:"trail"
         }
     ]
 
@@ -89,9 +153,7 @@ const Contact = () => {
         SetRingDes(ringdes);
     }
 
-    const shown = e => {
-        SetIsShown(current => !current)
-    }
+
 
     return ( 
     <div>
@@ -99,19 +161,19 @@ const Contact = () => {
             <Nav />
         </div>
 
+        <div>
+            <RingModal {...{RingImage, RingDes, Modal, SetModal }} />
+        </div>
 
         <Images >
-            {rings.map((item, index) =>{
+            {ringArray.map((item, index) =>{
                 return(
                 <MappedItems key={index}>
-                    <RImage src={item.imgsrc} onClick={() => {callImage(item.imgsrc, item.ringdes)}} />
-                    <button onClick={() => {callImage(item.imgsrc, item.ringdes); shown()}}>show more detail</button>
-                    {IsShown && <Ring RingImage={RingImage} RingDes={RingDes} />}
+                    <RImage src={item.imgsrc} onClick={() => {callImage(item.imgsrc, item.ringdes); SetModal(true)}} />
                 </MappedItems>
                 )
             })}
         </Images>
-
 
 
 
@@ -123,80 +185,6 @@ const Contact = () => {
     );
 }
 
-export default Contact;
 
+export default Collection;
 
-
-/* <Images>
-        <div class="losange">
-            <div class="los1">
-                <RImage src={Ring2} alt="ring 1" />
-            </div>
-        </div>
-
-        <div class="losange">
-            <div class="los1">
-                <RImage src={Ring3} alt="ring 1" />
-            </div>
-        </div>
-
-        <div class="losange">
-            <div class="los1">
-                <RImage src={Ring4} alt="ring 1" />
-            </div>
-        </div>
-
-        <div class="losange">
-            <div class="los1">
-                <RImage src={Ring5} alt="ring 1" />
-            </div>
-        </div>
-
-        <div class="losange">
-            <div class="los1">
-                <RImage src={Ring6} alt="ring 1" />
-            </div>
-        </div>
-
-        <div class="losange">
-            <div class="los1">
-                <RImage src={Ring7} alt="ring 1" />
-            </div>
-        </div>
-
-        <div class="losange">
-            <div class="los1">
-                <RImage src={Ring2} alt="ring 1" />
-            </div>
-        </div>
-
-        <div class="losange">
-            <div class="los1">
-                <RImage src={Ring3} alt="ring 1" />
-            </div>
-        </div>
-
-        <div class="losange">
-            <div class="los1">
-                <RImage src={Ring4} alt="ring 1" />
-            </div>
-        </div>
-
-        <div class="losange">
-            <div class="los1">
-                <RImage src={Ring5} alt="ring 1" />
-            </div>
-        </div>
-
-        <div class="losange">
-            <div class="los1">
-                <RImage src={Ring6} alt="ring 1" />
-            </div>
-        </div>
-
-        <div class="losange">
-            <div class="los1">
-                <RImage src={Ring7} alt="ring 1" />
-            </div>
-        </div>
-    </Images> */

@@ -4,14 +4,17 @@ import { RingDisplayImage } from "../style/Ring.styled";
 import Nav from "./Nav";
 
 
-const Rings = (RingImage, RingDes) => {
+function Rings({RingImage, RingDes}) {
 
     return (
     <div>
+
+    <Nav />
+
     <div>
         <RingDisplayImage src={RingImage} alt="ring" />
         <div>
-            {/* <p>{RingDes}</p> */}
+            <p>{RingDes}</p>
             <button><Link to={{pathname: '/contact'}}>Contact Me</Link></button>
             <button>Shop</button>
         </div>

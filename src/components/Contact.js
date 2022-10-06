@@ -5,7 +5,7 @@ import "../style/App.css"
 import { FormDiv, Form, Name, Email, Message, Label, Send, ContactDiv, ContactBox, ConatctOuter } from '../style/Contact.styled';
 import Footer from './Footer';
 
-const Collection = () => {
+const Contact = () => {
 
 
     const form = useRef();
@@ -57,4 +57,4 @@ const Collection = () => {
     );
 }
 
-export default Collection;
+export default Contact;
