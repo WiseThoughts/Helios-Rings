@@ -10,16 +10,16 @@ export const FooterContainer = styled.div`
     padding: 30px;
     width: 96.85%;
     position: absolute;
-    z-index: 10;
+    z-index: 1;
     border-top: 3px solid white;
-`;
+`
 
 export const FooterLinksItems = styled.a`
     font-size: 25px;
     margin-right: 15px;
     color: white;
     padding: 0px 17px;
-`;
+`
 
 export const FooterLinkTitle = styled.h1`
     font-size: 20px;

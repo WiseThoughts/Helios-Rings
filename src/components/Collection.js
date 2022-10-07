@@ -22,6 +22,9 @@ const Collection = () => {
 
 
     const [RingImage, SetRingImage] = useState();
+    const [RingImage2, SetRingImage2] = useState();
+    const [RingImage3, SetRingImage3] = useState();
+    const [RingImage4, SetRingImage4] = useState();
     const [RingDes, SetRingDes] = useState();
     const [Modal, SetModal] = useState(false);
 
@@ -31,6 +34,9 @@ const Collection = () => {
         {
         id:1,
         imgsrc:Ring2,
+        Img2: Ring3,
+        Img3: Ring4,
+        Img4: Ring5,
         ringdes:"trail: ring 2"
         },
         {
@@ -148,9 +154,12 @@ const Collection = () => {
     ]
 
 
-    const callImage = (imgsrc, ringdes)=>{
+    const callImage = (imgsrc, ringdes, Img2, Img3, Img4)=>{
         SetRingImage(imgsrc);
         SetRingDes(ringdes);
+        SetRingImage2(Img2);
+        SetRingImage3(Img3);
+        SetRingImage4(Img4);
     }
 
 
@@ -162,14 +171,14 @@ const Collection = () => {
         </div>
 
         <div>
-            <RingModal {...{RingImage, RingDes, Modal, SetModal }} />
+            <RingModal {...{RingImage, RingImage2, RingImage3, RingImage4, RingDes, Modal, SetModal, ringArray}} />
         </div>
 
         <Images >
             {ringArray.map((item, index) =>{
                 return(
                 <MappedItems key={index}>
-                    <RImage src={item.imgsrc} onClick={() => {callImage(item.imgsrc, item.ringdes); SetModal(true)}} />
+                    <RImage src={item.imgsrc} onClick={() => {callImage(item.imgsrc, item.ringdes, item.Img2, item.Img3, item.Img4); SetModal(true)}} />
                 </MappedItems>
                 )
             })}
