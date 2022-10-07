@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { ModalBackground, ModalButtons, ModalBox, ModalImage, TextBox } from './Modal.styling'
+import { ModalBackground, ModalButtons, ModalBox, TextBox } from './Modal.styling'
 import ModalSlides from './ModalSlides';
 
 

@@ -44,13 +44,6 @@ export const ModalButtons = styled.button`
   }
 `
 
-export const ModalImage = styled.img`
-  width: 60%;
-  object-fit: cover;
-  border: 5px solid black;
-  margin: 5px;
-`
-
 export const TextBox = styled.div`
   display: flex;
   flex-direction: column;

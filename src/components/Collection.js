@@ -2,7 +2,6 @@ import "../style/Collection.styled"
 import "../style/collection.css"
 
 import Nav from "./Nav";
-import Ring from "./Ring"
 import Ring2 from "../images/ringfive.jpg"
 import Ring3 from "../images/ringfour.jpg"
 import Ring4 from "../images/ringone.jpg"
