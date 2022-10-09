@@ -3,28 +3,39 @@ import styled from "styled-components";
 export const ReviewBackground = styled.div`
     background: rgba(0, 0, 0, 0.5);
     postion: relative;
-    height: 600px;
+    height: 700px;
     border: 5px solid black;
 `
 
 export const ReviewImage = styled.img`
-    width: 30%;
+    width: 40%;
     margin: 5px;
     border: 15px double black; 
     postion: relative;
-    transform: translate(40%, 5%);
+    transform: translate(20%, 0%);
     background: white;
+
+    @media (max-width: 320px){
+
+    }
 `
+
 export const ReviewContent = styled.div`
     display: flex;
     flex-direction: column;
     width: 750px;
+    height: 430px;
     border: 15px double black; 
     postion: relative;
-    transform: translate(115%, -102%);
+    transform: translate(125%, -115%);
     align-items: center;
     text-align: center;
     background: white;
+
+    @media (max-width: 320px){
+        width:200px;
+        transform: translate(0%, 0%);
+    }
 `
 
 export const Forward = styled.div`
@@ -34,6 +45,10 @@ export const Forward = styled.div`
     transform: translate(3500%, -650%);
     &:hover {
         cursor: pointer;
+    }
+
+    @media (max-width: 320px){
+        transform: translate(0%, 0%);
     }
 `
 
@@ -52,22 +67,38 @@ export const ReviewHeader = styled.h2`
     font-size: 45px;
     justify-content: center;
     padding: 15px 0px 0px 0px;
+
+    @media (max-width: 320px){
+        font-size: 25px;
+    }
 `
 
 export const ReviewText = styled.h3`
     padding: 30px 20px 5px 20px;
     font-size: 45px;
+
+    @media (max-width: 320px){
+        font-size: 25px;
+    }
 `
 
 export const ReviewName = styled.h5`
     font-size: 25px;
     padding: 0px 0px 25px 0px;
+
+    @media (max-width: 320px){
+        font-size: 20px;
+    }
 `
 
 export const ReviewDirect = styled.h5`
     text-align: center;
     padding: 5px 0px 5px 0px;
     font-size: 20px;
+
+    @media (max-width: 320px){
+        font-size: 15px;
+    }
 `
 
 export const ReviewButtons = styled.button`

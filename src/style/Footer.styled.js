@@ -8,10 +8,15 @@ export const FooterContainer = styled.div`
     align-items: center;
     background-color: black;
     padding: 30px;
-    width: 96.85%;
+    width: 96.87%;
     position: absolute;
     z-index: 1;
     border-top: 3px solid white;
+
+    @media (max-width: 320px){
+        width: 96.87%;
+
+    }
 `
 
 export const FooterLinksItems = styled.a`
@@ -19,6 +24,7 @@ export const FooterLinksItems = styled.a`
     margin-right: 15px;
     color: white;
     padding: 0px 17px;
+
 `
 
 export const FooterLinkTitle = styled.h1`

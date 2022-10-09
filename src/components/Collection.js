@@ -1,5 +1,4 @@
 import "../style/Collection.styled"
-import "../style/collection.css"
 
 import Nav from "./Nav";
 import Ring2 from "../images/ringfive.jpg"
