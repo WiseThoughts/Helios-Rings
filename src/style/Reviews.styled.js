@@ -56,8 +56,9 @@ export const RightReview = styled.div`
     padding: 10px;
 
     @media only screen and (min-device-width: 320px) and (max-device-width: 768px){
-        width: 100%;
+        width: auto;
         text-align: center;
+        justify-content: center;
         padding: 0;
         margin: 5px;
     }
@@ -77,8 +78,14 @@ export const ReviewImage = styled.img`
     background: white;
     object-fit: cover;
 
-    @media only screen and (min-device-width: 320px) and (max-device-width: 768px){
+    @media only screen and (min-device-width: 320px) and (max-device-width: 425px){
         width: 90%;
+        margin: 0;
+        padding: 0;
+    }
+
+    @media (min-width: 768px){
+        width:80%;
         margin: 0;
         padding: 0;
     }
@@ -139,7 +146,7 @@ export const ForwardA = styled.div`
 
     @media (min-width: 768px){
         position: absolute;
-        transform: translate(1270%, 420%);
+        transform: translate(1110%, 420%);
     }
 
     @media (min-width: 1024px){
@@ -208,7 +215,7 @@ export const BackA = styled.div`
 
     @media (min-width: 768px){
         position: absolute;
-        transform: translate(85%, 420%);
+        transform: translate(250%, 420%);
     }
 
     @media (min-width: 1024px){
@@ -216,7 +223,7 @@ export const BackA = styled.div`
         transform: translate(1050%, 420%);
     }
 
-    @media (max-width: 1440px){
+    @media (min-width: 1440px){
         position: absolute;
         transform: translate(1500%, 420%);
     }
