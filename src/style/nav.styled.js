@@ -18,7 +18,7 @@ export const Wrapper = styled.div`
     @media (max-width: 320px){
         display: felx;
         flex-direction: coloumn;
-        width: max-content;
+        width: auto;
     }
 `;
 

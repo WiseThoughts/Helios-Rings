@@ -8,6 +8,7 @@ function Reviews({ReviewArray}) {
 
     const [currentSlide, setCurrentSlide] = useState(0);
 
+
     const back = ()=>{
         const firstSlide = currentSlide === 0;
         const newSlide = firstSlide ? ReviewArray.length - 1 : currentSlide - 1;

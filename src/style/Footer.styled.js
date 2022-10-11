@@ -14,8 +14,7 @@ export const FooterContainer = styled.div`
     border-top: 3px solid white;
 
     @media (max-width: 320px){
-        width: 96.87%;
-
+        width: auto;
     }
 `
 
@@ -25,6 +24,9 @@ export const FooterLinksItems = styled.a`
     color: white;
     padding: 0px 17px;
 
+    @media (max-width: 320px){
+        font-size: 20px;
+    }
 `
 
 export const FooterLinkTitle = styled.h1`

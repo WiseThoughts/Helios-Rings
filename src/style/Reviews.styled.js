@@ -4,7 +4,11 @@ export const ReviewBackground = styled.div`
     background: rgba(0, 0, 0, 0.5);
     postion: relative;
     height: 700px;
-    border: 5px solid black;
+    border: 3px solid black;
+
+    @media (max-width: 320px){
+    height: 775px;
+    }
 `
 
 export const ReviewImage = styled.img`
@@ -16,7 +20,9 @@ export const ReviewImage = styled.img`
     background: white;
 
     @media (max-width: 320px){
-
+        width: 80%;
+        margin: 0;
+        transform: translate(5%, 215%);
     }
 `
 
@@ -33,8 +39,8 @@ export const ReviewContent = styled.div`
     background: white;
 
     @media (max-width: 320px){
-        width:200px;
-        transform: translate(0%, 0%);
+        width:251px;
+        transform: translate(5%, -48%);
     }
 `
 
@@ -48,7 +54,9 @@ export const Forward = styled.div`
     }
 
     @media (max-width: 320px){
-        transform: translate(0%, 0%);
+        transform: translate(390%, -485%);
+        width: min-content;
+        font-size: 60px;
     }
 `
 
@@ -60,6 +68,12 @@ export const Backward = styled.div`
     &:hover {
         cursor: pointer;
     }
+
+    @media (max-width: 320px){
+        transform: translate(25%, -385%);
+        width: min-content;
+        font-size: 60px;
+    }
 `
 
 export const ReviewHeader = styled.h2`
@@ -69,7 +83,12 @@ export const ReviewHeader = styled.h2`
     padding: 15px 0px 0px 0px;
 
     @media (max-width: 320px){
-        font-size: 25px;
+        display: flex;
+        text-align: center;
+        font-size: 30px;
+        outline: 1px solid white;
+        margin: 5px;
+        padding: 0px;
     }
 `
 
