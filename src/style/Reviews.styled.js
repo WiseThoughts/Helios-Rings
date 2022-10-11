@@ -2,37 +2,93 @@ import styled from "styled-components";
 
 export const ReviewBackground = styled.div`
     background: rgba(0, 0, 0, 0.5);
-    postion: relative;
-    height: 700px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
     border: 3px solid black;
+`
 
-    @media (max-width: 320px){
-    height: 775px;
+export const SplitReview = styled.div`
+    display:flex;
+    flex-direction: row;
+
+    @media only screen and (min-device-width: 320px) and (max-device-width: 768px){
+        display: block;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
-    @media (max-width: 450px){
-    height: 900px;
+    @media (min-width: 1440px){
+        display:flex;
+        flex-direction: row;
+    }
+`
+
+export const LeftReview = styled.div`
+    display:flex;
+    justify-content: flex-end;
+    align-content: center;
+    width: 50%;
+    padding: 10px;
+
+    @media only screen and (min-device-width: 320px) and (max-device-width: 768px){
+        display: block;
+        width: 100%;
+        text-align: center;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    @media (min-width: 1440px){
+        display:flex;
+        justify-content: flex-end;
+        align-content: center;
+        width: 50%;
+    }
+`
+
+export const RightReview = styled.div`
+    width: 50%;
+    display:flex;
+    justify-content: flex-start;
+    align-self: center;
+    padding: 10px;
+
+    @media only screen and (min-device-width: 320px) and (max-device-width: 768px){
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin: 5px;
+    }
+
+    @media (min-width: 1440px){
+        width: 50%;
+        display:flex;
+        justify-content: flex-start;
+        align-self: center;
     }
 `
 
 export const ReviewImage = styled.img`
-    width: 40%;
+    width: 90%;
     margin: 5px;
     border: 15px double black; 
-    postion: relative;
-    transform: translate(20%, 0%);
     background: white;
+    object-fit: cover;
 
-    @media (max-width: 320px){
-        width: 80%;
-        margin: 0;
-        transform: translate(5%, 215%);
-    }
-
-    @media (max-width: 450px){
+    @media only screen and (min-device-width: 320px) and (max-device-width: 768px){
         width: 90%;
         margin: 0;
-        transform: translate(1.5%, 157%);
+        padding: 0;
+    }
+
+    @media (min-width: 1024px){
+
+    }
+
+    @media (min-width: 1440px){
+        width: 80%;
     }
 `
 
@@ -42,64 +98,160 @@ export const ReviewContent = styled.div`
     width: 750px;
     height: 430px;
     border: 15px double black; 
-    postion: relative;
-    transform: translate(125%, -115%);
     align-items: center;
     text-align: center;
     background: white;
 
-    @media (max-width: 320px){
-        width:251px;
-        transform: translate(5%, -48%);
+    @media only screen and (min-device-width: 320px) and (max-device-width: 768px){
+        width:auto;
     }
 
-    @media (max-width: 450px){
-        width:350px;
-        transform: translate(5%, -65%);
+    @media (min-width: 1024px){
+
+    }
+
+    @media (min-width: 1440px){
+        
+    }
+`
+
+export const ForwardA = styled.div`
+    display:flex;
+    justify-content: flex-start;
+    align-content: center;
+    position: absolute;
+    transform: translate(3600%, 275%);
+
+    @media (min-width: 320px){
+        position: absolute;
+        transform: translate(465%, 460%);
+    }
+
+    @media (min-width: 375px){
+        position: absolute;
+        transform: translate(575%, 460%);
+    }
+
+    @media (min-width: 450px){
+        position: absolute;
+        transform: translate(730%, 460%);
+    }
+
+    @media (min-width: 768px){
+        position: absolute;
+        transform: translate(1270%, 420%);
+    }
+
+    @media (min-width: 1024px){
+        position: absolute;
+        transform: translate(1830%, 420%);
+    }
+
+    @media (min-width: 1440px){
+        position: absolute;
+        transform: translate(2600%, 420%);
     }
 `
 
 export const Forward = styled.div`
     font-size: 100px;
     width: 50px;
-    postion: relative;
-    transform: translate(3500%, -650%);
     &:hover {
         cursor: pointer;
     }
 
-    @media (max-width: 320px){
-        transform: translate(390%, -485%);
-        width: min-content;
-        font-size: 60px;
+    @media (min-width: 320px){
+        font-size: 80px;
     }
 
-    @media (max-width: 450px){
-        transform: translate(470%, -535%);
-        width: min-content;
-        font-size: 70px;
+    @media (min-width: 375px){
+        font-size: 80px;
+    }
+
+    @media (min-width: 450px){
+    }
+
+    @media (min-width: 768px){
+
+    }
+
+    @media (min-width: 1024px){
+
+    }
+
+    @media (max-width: 1440px){
+        
+    }
+`
+
+export const BackA = styled.div`
+    display:flex;
+    justify-content: flex-start;
+    align-content: center;
+    position: absolute;
+    transform: translate(40%, 265%);
+
+    @media (min-width: 320px){
+        position: absolute;
+        transform: translate(-5%, 460%);
+    }
+
+    @media (min-width: 375px){
+        position: absolute;
+        transform: translate(-5%, 460%);
+    }
+
+    @media (min-width: 450px){
+        position: absolute;
+        transform: translate(-5%, 460%);
+    }
+
+    @media (min-width: 768px){
+        position: absolute;
+        transform: translate(85%, 420%);
+    }
+
+    @media (min-width: 1024px){
+        position: absolute;
+        transform: translate(1050%, 420%);
+    }
+
+    @media (max-width: 1440px){
+        position: absolute;
+        transform: translate(1500%, 420%);
     }
 `
 
 export const Backward = styled.div`
     font-size: 100px;
     width: 50px;
-    postion: relative;
-    transform: translate(120%, -550%);
     &:hover {
         cursor: pointer;
     }
 
-    @media (max-width: 320px){
-        transform: translate(25%, -385%);
-        width: min-content;
-        font-size: 60px;
+    @media (min-width: 320px){
+        font-size: 80px;
     }
 
-    @media (max-width: 450px){
-        transform: translate(25%, -435%);
-        width: min-content;
-        font-size: 70px;
+    @media (min-width: 375px){
+        font-size: 80px;
+
+    }
+
+    @media (min-width: 450px){
+
+    }
+
+    @media (min-width: 768px){
+
+    }
+
+    @media (min-width: 1024px){
+
+    }
+
+    @media (max-width: 1440px){
+        
     }
 `
 
@@ -109,7 +261,7 @@ export const ReviewHeader = styled.h2`
     justify-content: center;
     padding: 15px 0px 0px 0px;
 
-    @media (max-width: 320px){
+    @media (min-width: 320px){
         display: flex;
         text-align: center;
         font-size: 30px;
@@ -118,13 +270,34 @@ export const ReviewHeader = styled.h2`
         padding: 0px;
     }
 
-    @media (max-width: 450px){
+    @media (min-width: 375px){
         display: flex;
         text-align: center;
-        font-size: 30px;
+        font-size: 32px;
         outline: 1px solid white;
         margin: 5px;
         padding: 0px;
+    }
+
+    @media (min-width: 450px){
+        display: flex;
+        text-align: center;
+        font-size: 35px;
+        outline: 1px solid white;
+        margin: 5px;
+        padding: 0px;
+    }
+
+    @media (min-width: 768px){
+
+    }
+
+    @media (min-width: 1024px){
+
+    }
+
+    @media (max-width: 1440px){
+        
     }
 `
 
@@ -132,25 +305,57 @@ export const ReviewText = styled.h3`
     padding: 30px 20px 5px 20px;
     font-size: 45px;
 
-    @media (max-width: 320px){
+    @media (min-width: 320px){
         font-size: 25px;
     }
 
-    @media (max-width: 450px){
-        font-size: 25px;
+    @media (min-width: 375px){
+        font-size: 30px;
+    }
+
+    @media (min-width: 450px){
+        font-size: 33px;
+    }
+
+    @media (min-width: 768px){
+
+    }
+
+    @media (min-width: 1024px){
+
+    }
+
+    @media (max-width: 1440px){
+        
     }
 `
 
 export const ReviewName = styled.h5`
     font-size: 25px;
-    padding: 0px 0px 25px 0px;
+    padding: 0px 0px 15px 0px;
 
-    @media (max-width: 320px){
+    @media (min-width: 320px){
         font-size: 20px;
     }
 
-    @media (max-width: 450px){
-        font-size: 20px;
+    @media (min-width: 375px){
+        font-size: 25px;
+    }
+
+    @media (min-width: 450px){
+        font-size: 25px;
+    }
+
+    @media (min-width: 768px){
+
+    }
+
+    @media (min-width: 1024px){
+
+    }
+
+    @media (max-width: 1440px){
+        
     }
 `
 
@@ -159,12 +364,29 @@ export const ReviewDirect = styled.h5`
     padding: 5px 0px 5px 0px;
     font-size: 20px;
 
-    @media (max-width: 320px){
+    @media (min-width: 320px){
         font-size: 15px;
     }
 
-    @media (max-width: 450px){
-        font-size: 15px;
+    @media (min-width: 375px){
+        font-size: 18px;
+    }
+
+    @media (min-width: 450px){
+        padding: 0px 5px;
+        font-size: 20px;
+    }
+
+    @media (min-width: 768px){
+
+    }
+
+    @media (min-width: 1024px){
+
+    }
+
+    @media (max-width: 1440px){
+        
     }
 `
 

@@ -8,17 +8,33 @@ export const FooterContainer = styled.div`
     align-items: center;
     background-color: black;
     padding: 30px;
-    width: 96.87%;
+    width: max-fit;
     position: absolute;
     z-index: 1;
     border-top: 3px solid white;
 
-    @media (max-width: 320px){
+    @media (min-width: 320px){
         width: auto;
     }
 
-    @media (max-width: 450px){
+    @media (min-width: 375px){
         width: auto;
+    }
+
+    @media (min-width: 450px){
+        width: auto;
+    }
+
+    @media (min-width: 768px){
+        width: 92%;
+    }
+
+    @media (min-width: 1024px){
+        width: 94%;
+    }
+
+    @media (min-width: 1440px){
+        width: 95.8%;
     }
 `
 
@@ -28,11 +44,11 @@ export const FooterLinksItems = styled.a`
     color: white;
     padding: 0px 17px;
 
-    @media (max-width: 320px){
+    @media (min-width: 320px){
         font-size: 20px;
     }
 
-    @media (max-width: 450px){
+    @media (min-width: 450px){
         font-size: 20px;
     }
 `

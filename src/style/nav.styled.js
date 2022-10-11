@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
     align-items: center;
     background-color: black;
     padding: 30px;
-    width: 96.87%;
+    width: auto;
     position: relative;
     z-index: 0;
     border-bottom: 10px double white;
@@ -21,10 +21,28 @@ export const Wrapper = styled.div`
         width: auto;
     }
 
+    @media (max-width: 375px){
+        display: felx;
+        flex-direction: coloumn;
+        width: auto;
+    }
+
     @media (max-width: 450px){
         display: felx;
         flex-direction: coloumn;
         width: auto;
+    }
+
+    @media (min-width: 768px){
+
+    }
+
+    @media (min-width: 1024px){
+
+    }
+
+    @media (max-width: 1440px){
+        
     }
 `;
 

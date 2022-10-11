@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { IoChevronBackSharp, IoChevronForwardSharp } from "react-icons/io5";
-import { Backward, Forward, ReviewBackground, ReviewImage, ReviewContent, ReviewText, ReviewName, ReviewHeader, ReviewDirect, ReviewButtons} from "../style/Reviews.styled";
+import { Backward, Forward, ReviewBackground, ReviewImage, ReviewContent, ReviewText, ReviewName, ReviewHeader, ReviewDirect, ReviewButtons, RightReview, LeftReview, BackA, ForwardA, SplitReview} from "../style/Reviews.styled";
 
 
 function Reviews({ReviewArray}) {
@@ -23,14 +23,19 @@ function Reviews({ReviewArray}) {
     return (
     <div>
 
-        <ReviewBackground>
-            <div>
-                <ReviewHeader>Have a look at what customers are saying...</ReviewHeader>
-            </div>
+    <ReviewBackground>
         <div>
-            <ReviewImage src={ReviewArray[currentSlide].productImg}></ReviewImage>
+            <ReviewHeader>Have a look at what customers are saying...</ReviewHeader>
         </div>
 
+        <SplitReview>
+        <LeftReview>
+            <ReviewImage src={ReviewArray[currentSlide].productImg}></ReviewImage>
+        </LeftReview>
+
+
+
+        <RightReview>
         <ReviewContent>
         <div>
             <ReviewText>{ReviewArray[currentSlide].review}</ReviewText>
@@ -46,12 +51,16 @@ function Reviews({ReviewArray}) {
             <ReviewButtons><Link to={{pathname: "/collection"}}> View the Collection</Link></ReviewButtons>
         </div>
         </ReviewContent>
+        </RightReview>
+        </SplitReview>
 
-        <Backward onClick={back}><IoChevronBackSharp /></Backward>
-        <Forward onClick={forward}><IoChevronForwardSharp/></Forward>
-        <div>
+        <BackA>
+            <Backward onClick={back}><IoChevronBackSharp /></Backward>
+        </BackA>
+        <ForwardA>
+            <Forward onClick={forward}><IoChevronForwardSharp/></Forward>
+        </ForwardA>
 
-        </div>
         </ReviewBackground>
 
     </div>

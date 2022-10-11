@@ -1,55 +1,32 @@
 import styled from "styled-components";
 
 
-export const Splitimg = styled.img`
-    height: 800px;
-    width: 90%;
-    margin: 5px;
-    border: 15px double black; 
-    object-fit: cover;
-
-    @media (max-width: 320px){
-        height: fit-content;
-        margin: 0px;
-        border: 8px double black;
-    }
-
-    @media (max-width: 450px){
-        height: fit-content;
-        margin: 0px;
-        border: 8px double black;
-    }
-`
-
 export const SplitPage = styled.div`
     display: flex;
 
-    @media (max-width: 320px){
+    @media only screen and (min-device-width: 320px) and (max-device-width: 888px){
         display: block;
         display: flex;
         flex-direction: column-reverse;
     }
 
-    @media (max-width: 450px){
-        display: block;
+    @media (min-width: 1440px){
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: row;
     }
 `
 
 export const LeftSide = styled.div`
     width: 50%;
 
-    @media (max-width: 320px){
+    @media only screen and (min-device-width: 320px) and (max-device-width: 888px){
         width: 100%;
         text-align: center;
         padding-bottom: 20px;
     }
 
-    @media (max-width: 450px){
-        width: 100%;
-        text-align: center;
-        padding-bottom: 20px;
+    @media (min-width: 1440px){
+        width: 50%;
     }
 `
 
@@ -58,18 +35,39 @@ export const RightSide = styled.div`
     text-align: center;
     padding-top: 270px;
 
-    @media (max-width: 320px){
+    @media only screen and (min-device-width: 320px) and (max-device-width: 888px){
         width: 100%;
         margin: 0px;
         padding-top: 10px;
         padding-bottom: 20px;
     }
 
-    @media (max-width: 450px){
-        width: 100%;
+    @media (min-width: 1440px){
+        width: 50%;
+        text-align: center;
+        padding-top: 20%;
+    }
+`
+
+export const Splitimg = styled.img`
+    height: 800px;
+    width: 90%;
+    margin: 5px;
+    border: 15px double black; 
+    object-fit: cover;
+
+    @media only screen and (min-device-width: 320px) and (max-device-width: 888px){
+        height: fit-content;
         margin: 0px;
-        padding-top: 10px;
-        padding-bottom: 20px;
+        border: 8px double black;
+    }
+
+    @media (min-width: 1440px){
+        height: 800px;
+        width: 90%;
+        margin: 5px;
+        border: 15px double black; 
+        object-fit: cover;
     }
 `
 
@@ -78,14 +76,26 @@ export const HomeHeader = styled.h1`
     padding: 0px 0px 25px 0px;
     font-size: 65px;
 
-    @media (max-width: 320px){
+    @media (min-width: 320px){
         font-size: 45px;
         padding: 0px 0px 10px 0px;
     }
 
-    @media (max-width: 450px){
-        font-size: 45px;
-        padding: 0px 0px 10px 0px;
+    @media (min-width: 450px){
+        font-size: 50px;
+        padding: 0px 10px 15px 10px;
+    }
+
+    @media (min-width: 768px){
+
+    }
+
+    @media (min-width: 1024px){
+
+    }
+
+    @media (max-width: 1440px){
+        
     }
 `
 
@@ -95,16 +105,28 @@ export const HomeSubHeader = styled.h2`
     font-size: 35px;
     text-decoration: underline;
 
-    @media (max-width: 320px){
+    @media (min-width: 320px){
         font-size: 25px;
         margin: 0px 20px;
         padding: 0px 0px 10px 0px;
     }
 
-    @media (max-width: 450px){
+    @media (min-width: 450px){
         font-size: 25px;
         margin: 0px 20px;
         padding: 0px 0px 10px 0px;
+    }
+
+    @media (min-width: 768px){
+
+    }
+
+    @media (min-width: 1024px){
+
+    }
+
+    @media (max-width: 1440px){
+        
     }
 `
 
@@ -113,14 +135,26 @@ export const HomeDirect = styled.h5`
     padding: 10px 0px 10px 0px;
     font-size: 25px;
 
-    @media (max-width: 320px){
+    @media (min-width: 320px){
         font-size: 20px;
         padding: 10px 10px 10px 10px;
     }
 
-    @media (max-width: 450px){
+    @media (min-width: 450px){
         font-size: 20px;
-        padding: 10px 10px 10px 10px;
+        padding: 15px 15px 10px 15px;
+    }
+
+    @media (min-width: 768px){
+
+    }
+
+    @media (min-width: 1024px){
+
+    }
+
+    @media (max-width: 1440px){
+        
     }
 `
 
@@ -132,15 +166,27 @@ export const HomeButtons = styled.button`
     color: white;
     border: 8px double white;
 
-    @media (max-width: 320px){
+    @media (min-width: 320px){
         font-size: 20px;
         padding: 5px;
         border: 5px double white;
     }
 
-    @media (max-width: 450px){
+    @media (min-width: 450px){
         font-size: 20px;
         padding: 5px;
         border: 5px double white;
+    }
+
+    @media (min-width: 768px){
+
+    }
+
+    @media (min-width: 1024px){
+
+    }
+
+    @media (max-width: 1440px){
+        
     }
 `
