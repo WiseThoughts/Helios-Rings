@@ -16,6 +16,10 @@ export const FooterContainer = styled.div`
     @media (max-width: 320px){
         width: auto;
     }
+
+    @media (max-width: 450px){
+        width: auto;
+    }
 `
 
 export const FooterLinksItems = styled.a`
@@ -25,6 +29,10 @@ export const FooterLinksItems = styled.a`
     padding: 0px 17px;
 
     @media (max-width: 320px){
+        font-size: 20px;
+    }
+
+    @media (max-width: 450px){
         font-size: 20px;
     }
 `

@@ -13,6 +13,12 @@ export const Splitimg = styled.img`
         margin: 0px;
         border: 8px double black;
     }
+
+    @media (max-width: 450px){
+        height: fit-content;
+        margin: 0px;
+        border: 8px double black;
+    }
 `
 
 export const SplitPage = styled.div`
@@ -23,12 +29,24 @@ export const SplitPage = styled.div`
         display: flex;
         flex-direction: column-reverse;
     }
+
+    @media (max-width: 450px){
+        display: block;
+        display: flex;
+        flex-direction: column-reverse;
+    }
 `
 
 export const LeftSide = styled.div`
     width: 50%;
 
     @media (max-width: 320px){
+        width: 100%;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    @media (max-width: 450px){
         width: 100%;
         text-align: center;
         padding-bottom: 20px;
@@ -46,6 +64,13 @@ export const RightSide = styled.div`
         padding-top: 10px;
         padding-bottom: 20px;
     }
+
+    @media (max-width: 450px){
+        width: 100%;
+        margin: 0px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
 `
 
 export const HomeHeader = styled.h1`
@@ -54,6 +79,11 @@ export const HomeHeader = styled.h1`
     font-size: 65px;
 
     @media (max-width: 320px){
+        font-size: 45px;
+        padding: 0px 0px 10px 0px;
+    }
+
+    @media (max-width: 450px){
         font-size: 45px;
         padding: 0px 0px 10px 0px;
     }
@@ -70,6 +100,12 @@ export const HomeSubHeader = styled.h2`
         margin: 0px 20px;
         padding: 0px 0px 10px 0px;
     }
+
+    @media (max-width: 450px){
+        font-size: 25px;
+        margin: 0px 20px;
+        padding: 0px 0px 10px 0px;
+    }
 `
 
 export const HomeDirect = styled.h5`
@@ -78,6 +114,11 @@ export const HomeDirect = styled.h5`
     font-size: 25px;
 
     @media (max-width: 320px){
+        font-size: 20px;
+        padding: 10px 10px 10px 10px;
+    }
+
+    @media (max-width: 450px){
         font-size: 20px;
         padding: 10px 10px 10px 10px;
     }
@@ -92,6 +133,12 @@ export const HomeButtons = styled.button`
     border: 8px double white;
 
     @media (max-width: 320px){
+        font-size: 20px;
+        padding: 5px;
+        border: 5px double white;
+    }
+
+    @media (max-width: 450px){
         font-size: 20px;
         padding: 5px;
         border: 5px double white;

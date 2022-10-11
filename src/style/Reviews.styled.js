@@ -9,6 +9,10 @@ export const ReviewBackground = styled.div`
     @media (max-width: 320px){
     height: 775px;
     }
+
+    @media (max-width: 450px){
+    height: 900px;
+    }
 `
 
 export const ReviewImage = styled.img`
@@ -23,6 +27,12 @@ export const ReviewImage = styled.img`
         width: 80%;
         margin: 0;
         transform: translate(5%, 215%);
+    }
+
+    @media (max-width: 450px){
+        width: 90%;
+        margin: 0;
+        transform: translate(1.5%, 157%);
     }
 `
 
@@ -42,6 +52,11 @@ export const ReviewContent = styled.div`
         width:251px;
         transform: translate(5%, -48%);
     }
+
+    @media (max-width: 450px){
+        width:350px;
+        transform: translate(5%, -65%);
+    }
 `
 
 export const Forward = styled.div`
@@ -57,6 +72,12 @@ export const Forward = styled.div`
         transform: translate(390%, -485%);
         width: min-content;
         font-size: 60px;
+    }
+
+    @media (max-width: 450px){
+        transform: translate(470%, -535%);
+        width: min-content;
+        font-size: 70px;
     }
 `
 
@@ -74,6 +95,12 @@ export const Backward = styled.div`
         width: min-content;
         font-size: 60px;
     }
+
+    @media (max-width: 450px){
+        transform: translate(25%, -435%);
+        width: min-content;
+        font-size: 70px;
+    }
 `
 
 export const ReviewHeader = styled.h2`
@@ -90,6 +117,15 @@ export const ReviewHeader = styled.h2`
         margin: 5px;
         padding: 0px;
     }
+
+    @media (max-width: 450px){
+        display: flex;
+        text-align: center;
+        font-size: 30px;
+        outline: 1px solid white;
+        margin: 5px;
+        padding: 0px;
+    }
 `
 
 export const ReviewText = styled.h3`
@@ -97,6 +133,10 @@ export const ReviewText = styled.h3`
     font-size: 45px;
 
     @media (max-width: 320px){
+        font-size: 25px;
+    }
+
+    @media (max-width: 450px){
         font-size: 25px;
     }
 `
@@ -108,6 +148,10 @@ export const ReviewName = styled.h5`
     @media (max-width: 320px){
         font-size: 20px;
     }
+
+    @media (max-width: 450px){
+        font-size: 20px;
+    }
 `
 
 export const ReviewDirect = styled.h5`
@@ -116,6 +160,10 @@ export const ReviewDirect = styled.h5`
     font-size: 20px;
 
     @media (max-width: 320px){
+        font-size: 15px;
+    }
+
+    @media (max-width: 450px){
         font-size: 15px;
     }
 `

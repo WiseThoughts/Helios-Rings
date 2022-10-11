@@ -20,6 +20,12 @@ export const Wrapper = styled.div`
         flex-direction: coloumn;
         width: auto;
     }
+
+    @media (max-width: 450px){
+        display: felx;
+        flex-direction: coloumn;
+        width: auto;
+    }
 `;
 
 export const NavbarItems = styled.a`
@@ -37,6 +43,11 @@ export const NavbarItems = styled.a`
     }
 
     @media (max-width: 320px){
+        display: felx;
+        flex-direction: coloumn;
+    }
+
+    @media (max-width: 450px){
         display: felx;
         flex-direction: coloumn;
     }
