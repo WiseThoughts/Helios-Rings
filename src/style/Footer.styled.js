@@ -36,6 +36,10 @@ export const FooterContainer = styled.div`
     @media (min-width: 1440px){
         width: 95.8%;
     }
+
+    @media (min-width: 1920px){
+        width: 96.87%;
+    }
 `
 
 export const FooterLinksItems = styled.a`

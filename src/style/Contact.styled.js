@@ -12,7 +12,6 @@ export const Form = styled.form`
     display: flex;
     flex-direction: column;
     transform: translate(120%, 00%);
-
 `
 
 export const Name = styled.input`

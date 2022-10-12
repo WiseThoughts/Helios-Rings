@@ -45,7 +45,15 @@ export const RightSide = styled.div`
     @media (min-width: 1440px){
         width: 50%;
         text-align: center;
-        padding-top: 20%;
+        align-self: center;
+        padding: 0;
+    }
+
+    @media (min-width: 1920px){
+        width: 50%;
+        text-align: center;
+        align-self: center;
+        padding: 0;
     }
 `
 

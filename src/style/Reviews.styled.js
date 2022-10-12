@@ -158,6 +158,11 @@ export const ForwardA = styled.div`
         position: absolute;
         transform: translate(2600%, 420%);
     }
+
+    @media (min-width: 1920px){
+        position: absolute;
+        transform: translate(3230%, 490%);
+    }
 `
 
 export const Forward = styled.div`
@@ -226,6 +231,11 @@ export const BackA = styled.div`
     @media (min-width: 1440px){
         position: absolute;
         transform: translate(1500%, 420%);
+    }
+
+    @media (min-width: 1920px){
+        position: absolute;
+        transform: translate(2000%, 490%);
     }
 `
 
