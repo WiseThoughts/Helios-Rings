@@ -1,7 +1,12 @@
 import styled from "styled-components";
 
 export const Pad =styled.div`
-    margin:auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 `
 
 export const ReviewImage = styled.img`
@@ -62,8 +67,8 @@ export const ReviewImage = styled.img`
     }
 
     @media (min-width: 1024px){
-        max-width: 90%;
-        max-height: 90%;
+        max-width: 95%;
+        max-height: 95%;
         border: 5px solid black; 
         padding: 3px;
     }
@@ -97,161 +102,44 @@ export const ReviewImage = styled.img`
     }
 `
 
+export const FBArrows = styled.div`
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: fit-content;
+    justify-content: space-between;
+`
+
 export const Forward = styled.div`
+    display: flex;
+    text-align: right;
     font-size: 80px;
-    width: 80px;
-    height: 80px;
+    width: min-content;
+    height: min-content;
+    align-content: center;
     color: black;
     background: rgba(255,255,255,0.5);
-    outline: 3px rgba(0,0,0,0.8) solid;
-    postion: absolute;
-    transform: translate(1175%, -650%);
+    border: 3px rgba(0,0,0,1) solid;
     &:hover {
         cursor: pointer;
         color: white;
-        outline: 3px rgba(255,255,255,0.8) solid;
         background: rgba(0,0,0,0.5);
-    }
-
-    @media (min-width: 320px){
-        postion: absolute;
-        transform: translate(240%, -225%);
-    }
-
-    @media (min-width: 375px){
-        postion: absolute;
-        transform: translate(293%, -225%);
-    }
-
-    @media (min-width: 425px){
-        postion: absolute;
-        transform: translate(0%, 0%);
-    }
-
-    @media (min-width: 550px){
-        postion: absolute;
-        transform: translate(0%, 0%);
-    }
-
-    @media (min-width: 650px){
-        postion: absolute;
-        transform: translate(0%, 0%);
-    }
-
-    @media (min-width: 768px){
-        postion: absolute;
-        transform: translate(0%, 0%);
-    }
-
-    @media (min-width: 838px){
-        postion: absolute;
-        transform: translate(0%, 0%);
-    }
-
-    @media (min-width: 950px){
-        postion: absolute;
-        transform: translate(0%, 0%);
-    }
-
-    @media (min-width: 1024px){
-        postion: absolute;
-        transform: translate(0%, 0%);
-    }
-
-    @media (min-width: 1200px){
-        postion: absolute;
-        transform: translate(0%, 0%);
-    }
-
-    @media (min-width: 1350px){
-        postion: absolute;
-        transform: translate(0%, 0%);
-    }
-
-    @media (min-width: 1440px){
-        postion: absolute;
-        transform: translate(1000%, -500%);
-    }
-
-    @media (min-width: 1920px){
-        postion: absolute;
-        transform: translate(0%, 0%);
     }
 `
 
 export const Backward = styled.div`
+    display: flex;
+    text-align: left;
     font-size: 80px;
-    width: 80px;
-    height: 80px;
+    width: min-content;
+    height: min-content;
+    align-content: center;
     color: black;
     background: rgba(255,255,255,0.5);
-    outline: 3px rgba(0,0,0,0.8) solid;
-    postion: fixed;
-    transform: translate(50%, -550%);
+    border: 3px rgba(0,0,0,1) solid;
     &:hover {
         cursor: pointer;
         color: white;
-        outline: 3px rgba(255,255,255,0.8) solid;
         background: rgba(0,0,0,0.5);
-    }
-
-    @media only screen and (min-device-width: 320px) and (max-device-width: 424px){
-        postion: absolute;
-        transform: translate(20%, -125%);
-    }
-
-    @media (min-width: 425px){
-        postion: absolute;
-        transform: translate(20%, -125%);
-    }
-
-    @media (min-width: 550px){
-        postion: absolute;
-        transform: translate(0%, 0%);
-    }
-
-    @media (min-width: 650px){
-        postion: absolute;
-        transform: translate(0%, 0%);
-    }
-
-    @media (min-width: 768px){
-        postion: absolute;
-        transform: translate(0%, 0%);
-    }
-
-    @media (min-width: 838px){
-        postion: absolute;
-        transform: translate(0%, 0%);
-    }
-
-    @media (min-width: 950px){
-        postion: absolute;
-        transform: translate(0%, 0%);
-    }
-
-    @media (min-width: 1024px){
-        postion: absolute;
-        transform: translate(0%, 0%);
-    }
-
-    @media (min-width: 1200px){
-        postion: absolute;
-        transform: translate(0%, 0%);
-    }
-
-    @media (min-width: 1350px){
-        postion: absolute;
-        transform: translate(0%, 0%);
-    }
-
-    @media (min-width: 1440px){
-        postion: absolute;
-        transform: translate(100%, -400%);
-    }
-
-    @media (min-width: 1920px){
-        postion: absolute;
-        transform: translate(0%, 0%);
     }
 `

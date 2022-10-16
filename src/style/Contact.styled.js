@@ -1,21 +1,45 @@
 import styled from "styled-components";
 
+export const ContactDiv = styled.div`
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    @media only screen and (min-device-width: 320px) and (max-device-width: 424px){
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media (min-width: 425px){
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media (min-width: 768px){
+        display: flex;
+        flex-direction: row;
+    }
+
+    @media (min-width: 1440px){
+        display: flex;
+        flex-direction: row;
+    }
+`
 
 export const FormDiv = styled.div`
     display: flex;
-    justify-content: center;
-    position: absoulute;
-    padding: 40px;
+    justify-content: flex-start;
+    width: 50%;
 `
 
 export const Form = styled.form`
     display: flex;
     flex-direction: column;
-    transform: translate(120%, 00%);
+    margin-left: 20%;
 `
 
 export const Name = styled.input`
-    width: 200%;
+    width: max-content;
     height: 40px;
     font-size: 20px;
     padding: 5px;
@@ -25,7 +49,7 @@ export const Name = styled.input`
 `
 
 export const Email = styled.input`
-    width: 200%;
+    width: max-content;
     height: 40px;
     font-size: 20px;
     padding: 5px;
@@ -35,7 +59,7 @@ export const Email = styled.input`
 `
 
 export const Message = styled.textarea`
-    width: 200%;
+    width: 100%;
     height: 400px;
     font-size: 20px;
     padding: 5px;
@@ -62,18 +86,13 @@ export const Send = styled.input`
     }
 `
 
-export const ContactDiv = styled.div`
-    display: flex;
-    flex-direction: row;
 
-`
 
 export const ConatctOuter = styled.div`
-    position: absoulute;
-    border: 12px double black;
-    width: max-content;
-    height: max-content;
-    transform: translate(150%, 60%);
+    display: flex;
+    justify-content: center;
+    align-contact: center;
+    width: 50%;
 `
 
 export const ContactBox = styled.div`
@@ -83,4 +102,5 @@ export const ContactBox = styled.div`
     padding: 10px;
     width: 450px;
     height: min-content;
+    border: 12px double white;
 `

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { IoChevronBackSharp, IoChevronForwardSharp } from "react-icons/io5";
-import { Backward, Forward, ReviewBackground, ReviewImage, ReviewContent, ReviewText, ReviewName, ReviewHeader, ReviewDirect, ReviewButtons, RightReview, LeftReview, BackA, ForwardA, SplitReview} from "../style/Reviews.styled";
+import { Backward, Forward, ReviewBackground, ReviewImage, ReviewContent, ReviewText, ReviewName, ReviewHeader, ReviewDirect, ReviewButtons, RightReview, LeftReview, SplitReview, FBArrows, } from "../style/Reviews.styled";
 
 
 function Reviews({ReviewArray}) {
@@ -50,16 +50,19 @@ function Reviews({ReviewArray}) {
             <ReviewDirect>Or to browse though my past rings</ReviewDirect>
             <ReviewButtons><Link to={{pathname: "/collection"}}> View the Collection</Link></ReviewButtons>
         </div>
+
+        <FBArrows>
+
+            <Backward onClick={back}><IoChevronBackSharp /></Backward>
+
+            <Forward onClick={forward}><IoChevronForwardSharp/></Forward>
+
+        </FBArrows>
+
         </ReviewContent>
         </RightReview>
         </SplitReview>
 
-        <BackA>
-            <Backward onClick={back}><IoChevronBackSharp /></Backward>
-        </BackA>
-        <ForwardA>
-            <Forward onClick={forward}><IoChevronForwardSharp/></Forward>
-        </ForwardA>
 
         </ReviewBackground>
 

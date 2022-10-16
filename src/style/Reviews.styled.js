@@ -102,173 +102,39 @@ export const ReviewImage = styled.img`
 export const ReviewContent = styled.div`
     display: flex;
     flex-direction: column;
-    width: 750px;
-    height: 430px;
+    width: auto;
+    height: auto;
     border: 15px double black; 
     align-items: center;
     text-align: center;
     background: white;
-
-    @media only screen and (min-device-width: 320px) and (max-device-width: 768px){
-        width:auto;
-    }
-
-    @media (min-width: 1024px){
-
-    }
-
-    @media (min-width: 1440px){
-        
-    }
 `
 
-export const ForwardA = styled.div`
-    display:flex;
-    justify-content: flex-start;
-    align-content: center;
-    position: absolute;
-    transform: translate(3600%, 275%);
-
-    @media (min-width: 320px){
-        position: absolute;
-        transform: translate(465%, 460%);
-    }
-
-    @media (min-width: 375px){
-        position: absolute;
-        transform: translate(575%, 460%);
-    }
-
-    @media (min-width: 450px){
-        position: absolute;
-        transform: translate(730%, 460%);
-    }
-
-    @media (min-width: 768px){
-        position: absolute;
-        transform: translate(1110%, 420%);
-    }
-
-    @media (min-width: 1024px){
-        position: absolute;
-        transform: translate(1830%, 420%);
-    }
-
-    @media (min-width: 1440px){
-        position: absolute;
-        transform: translate(2600%, 420%);
-    }
-
-    @media (min-width: 1920px){
-        position: absolute;
-        transform: translate(3230%, 490%);
-    }
+export const FBArrows = styled.div`
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 100%;
+    justify-content: space-between;
 `
 
 export const Forward = styled.div`
-    font-size: 100px;
-    width: 50px;
+    text-align: right;
+    font-size: 80px;
+    width: min-content;
+    height: min-content;
     &:hover {
         cursor: pointer;
-    }
-
-    @media (min-width: 320px){
-        font-size: 80px;
-    }
-
-    @media (min-width: 375px){
-        font-size: 80px;
-    }
-
-    @media (min-width: 450px){
-    }
-
-    @media (min-width: 768px){
-
-    }
-
-    @media (min-width: 1024px){
-
-    }
-
-    @media (max-width: 1440px){
-        
-    }
-`
-
-export const BackA = styled.div`
-    display:flex;
-    justify-content: flex-start;
-    align-content: center;
-    position: absolute;
-    transform: translate(40%, 265%);
-
-    @media (min-width: 320px){
-        position: absolute;
-        transform: translate(-5%, 460%);
-    }
-
-    @media (min-width: 375px){
-        position: absolute;
-        transform: translate(-5%, 460%);
-    }
-
-    @media (min-width: 450px){
-        position: absolute;
-        transform: translate(-5%, 460%);
-    }
-
-    @media (min-width: 768px){
-        position: absolute;
-        transform: translate(250%, 420%);
-    }
-
-    @media (min-width: 1024px){
-        position: absolute;
-        transform: translate(1050%, 420%);
-    }
-
-    @media (min-width: 1440px){
-        position: absolute;
-        transform: translate(1500%, 420%);
-    }
-
-    @media (min-width: 1920px){
-        position: absolute;
-        transform: translate(2000%, 490%);
     }
 `
 
 export const Backward = styled.div`
-    font-size: 100px;
-    width: 50px;
+    text-align: left;
+    font-size: 80px;
+    width: min-content;
+    height: min-content;
     &:hover {
         cursor: pointer;
-    }
-
-    @media (min-width: 320px){
-        font-size: 80px;
-    }
-
-    @media (min-width: 375px){
-        font-size: 80px;
-
-    }
-
-    @media (min-width: 450px){
-
-    }
-
-    @media (min-width: 768px){
-
-    }
-
-    @media (min-width: 1024px){
-
-    }
-
-    @media (max-width: 1440px){
-        
     }
 `
 

@@ -87,4 +87,24 @@ export const RImage = styled.img`
     @media (min-width: 1920px){
         width: 440px;
     }
+
+    @media (min-width: 2200px){
+        width: 520px;
+    }
+
+    @media (min-width: 2400px){
+        width: 570px;
+    }
+
+    @media (min-width: 2560px){
+        width: 600px;
+    }
+
+    @media (min-width: 2700px){
+        width: 640px;
+    }
+
+    @media (min-width: 3000px){
+        width: 700px;
+    }
 `
