@@ -28,6 +28,6 @@ a, a:hover, a:focus, a:active {
     rgba(0,0,0, 0.6),rgba(0,0,0, 0.4),
     transparent),  linear-gradient(240deg,
     rgba(0,0,0, 0.4),rgba(0,0,0, 0.5), transparent), url("../images/ringC.jpg");
-    background-size: cover;
+    background-size: contain;
     height: fit-content;
 }
