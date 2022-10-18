@@ -99,7 +99,7 @@ export const ModalBox = styled.div`
 `
 
 export const PicBox = styled.div`
-  width: 60%;
+  width: 50%;
   height: 100%;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 424px){
@@ -107,32 +107,32 @@ export const PicBox = styled.div`
     height: 50%;
   }
 
-  @media (min-width: 425px){
+  @media only screen and (min-width: 425px){
     width: 100%;
     height: 50%;
   }
 
-  @media (min-width: 600px){
+  @media only screen and  (min-width: 600px){
     width: 50%;
     height: 100%;
   }
 
-  @media (min-width: 768px){
+  @media only screen and (min-width: 768px){
     width: 50%;
     height: 100%;
   }
 
-  @media (min-width: 1024px){
+  @media only screen and (min-width: 1024px){
     width: 50%;
     height: 100%;
   }
 
-  @media (min-width: 1440px){
+  @media only screen and (min-width: 1440px){
     width: 50%;
     height: 100%;
   }
 
-  @media (min-width: 1920px){
+  @media only screen and (min-width: 1920px){
     width: 50%;
     height: 100%;
   }
@@ -151,33 +151,33 @@ export const TextBox = styled.div`
     height: 50%;
   }
 
-  @media (min-width: 425px){
+  @media only screen and (min-width: 425px){
     width: 100%;
     height: 50%;
   }
 
-  @media (min-width: 600px){
+  @media only screen and (min-width: 600px){
     width: 50%;
     height: 100%;
   }
 
 
-  @media (min-width: 768px){
+  @media only screen and (min-width: 768px){
     width: 50%;
     height: 100%;
   }
 
-  @media (min-width: 1024px){
+  @media only screen and (min-width: 1024px){
     width: 50%;
     height: 100%;
   }
 
-  @media (min-width: 1440px){
+  @media only screen and (min-width: 1440px){
     width: 50%;
     height: 100%;
   }
 
-  @media (min-width: 1920px){
+  @media only screen and (min-width: 1920px){
     width: 50%;
     height: 100%;
   }
