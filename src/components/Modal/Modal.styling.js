@@ -123,17 +123,17 @@ export const PicBox = styled.div`
   }
 
   @media (min-width: 1024px){
-    width: 60%;
+    width: 50%;
     height: 100%;
   }
 
   @media (min-width: 1440px){
-    width: 60%;
+    width: 50%;
     height: 100%;
   }
 
   @media (min-width: 1920px){
-    width: 60%;
+    width: 50%;
     height: 100%;
   }
 `
@@ -168,17 +168,17 @@ export const TextBox = styled.div`
   }
 
   @media (min-width: 1024px){
-    width: 40%;
+    width: 50%;
     height: 100%;
   }
 
   @media (min-width: 1440px){
-    width: 40%;
+    width: 50%;
     height: 100%;
   }
 
   @media (min-width: 1920px){
-    width: 40%;
+    width: 50%;
     height: 100%;
   }
 `
