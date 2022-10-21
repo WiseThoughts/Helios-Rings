@@ -10,12 +10,20 @@ export const Pad =styled.div`
 `
 
 export const ReviewImage = styled.img`
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 80%;
+    max-height: 80%;
     margin: 5px;
     border: 15px double black; 
     background: white;
     object-fit: cover;
+
+    @media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape){
+        max-width: 80%;
+        max-height: 80%;
+        border: 10px double black;
+        margin: 0px;
+    }
+
 
     @media only screen and (min-device-width: 320px) and (max-device-width: 424px){
         max-width: 90%;
