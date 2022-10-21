@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { ModalBackground, ModalButtons, ModalBox, TextBox } from './Modal.styling'
+import { ModalBackground, ModalButtons, ModalBox, TextBox, PicBox } from './Modal.styling'
 import ModalSlides from './ModalSlides';
 
 
@@ -23,13 +23,15 @@ const Modal = ({Modal, SetModal, RingImage, RingImage2, RingImage3, RingImage4, 
     <div>
         <ModalBackground />
             <ModalBox>
-                <ModalSlides {...{ringPicArray}} />
-                    <TextBox>
-                        <p>{RingDes}</p>
-                        <ModalButtons><Link to={{pathname: '/contact'}}>Contact Me</Link></ModalButtons>
-                        <ModalButtons>Shop</ModalButtons>
-                        <ModalButtons onClick={()=>{SetModal(false); scroll()}}>Close</ModalButtons>
-                    </TextBox>
+                <PicBox>
+                    <ModalSlides {...{ringPicArray}} />
+                </PicBox>
+                <TextBox>
+                    <p>{RingDes}</p>
+                    <ModalButtons><Link to={{pathname: '/contact'}}>Contact Me</Link></ModalButtons>
+                    <ModalButtons>Shop</ModalButtons>
+                    <ModalButtons onClick={()=>{SetModal(false); scroll()}}>Close</ModalButtons>
+                </TextBox>
             </ModalBox>
 
     </div>

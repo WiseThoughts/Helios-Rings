@@ -18,7 +18,7 @@ export const SplitReview = styled.div`
         flex-direction: column-reverse;
     }
 
-    @media (min-width: 1440px){
+    @media (min-device-width: 1440px){
         display:flex;
         flex-direction: row;
     }
@@ -40,7 +40,7 @@ export const LeftReview = styled.div`
         padding: 0;
     }
 
-    @media (min-width: 1440px){
+    @media (min-device-width: 1440px){
         display:flex;
         justify-content: flex-end;
         align-content: center;
@@ -63,7 +63,7 @@ export const RightReview = styled.div`
         margin: 5px;
     }
 
-    @media (min-width: 1440px){
+    @media (min-device-width: 1440px){
         width: 50%;
         display:flex;
         justify-content: flex-start;
@@ -84,7 +84,7 @@ export const ReviewImage = styled.img`
         padding: 0;
     }
 
-    @media (min-width: 768px){
+    @media (min-device-width: 768px){
         width:80%;
         margin: 0;
         padding: 0;
@@ -94,7 +94,7 @@ export const ReviewImage = styled.img`
 
     }
 
-    @media (min-width: 1440px){
+    @media (min-device-width: 1440px){
         width: 80%;
     }
 `
@@ -144,7 +144,7 @@ export const ReviewHeader = styled.h2`
     justify-content: center;
     padding: 15px 0px 0px 0px;
 
-    @media (min-width: 320px){
+    @media (min-device-width: 320px){
         display: flex;
         text-align: center;
         font-size: 30px;
@@ -153,7 +153,7 @@ export const ReviewHeader = styled.h2`
         padding: 0px;
     }
 
-    @media (min-width: 375px){
+    @media (min-device-width: 375px){
         display: flex;
         text-align: center;
         font-size: 32px;
@@ -162,7 +162,7 @@ export const ReviewHeader = styled.h2`
         padding: 0px;
     }
 
-    @media (min-width: 450px){
+    @media (min-device-width: 450px){
         display: flex;
         text-align: center;
         font-size: 35px;
@@ -188,15 +188,15 @@ export const ReviewText = styled.h3`
     padding: 30px 20px 5px 20px;
     font-size: 45px;
 
-    @media (min-width: 320px){
+    @media (min-device-width: 320px){
         font-size: 25px;
     }
 
-    @media (min-width: 375px){
+    @media (min-device-width: 375px){
         font-size: 30px;
     }
 
-    @media (min-width: 450px){
+    @media (min-device-width: 450px){
         font-size: 33px;
     }
 
@@ -217,15 +217,15 @@ export const ReviewName = styled.h5`
     font-size: 25px;
     padding: 0px 0px 15px 0px;
 
-    @media (min-width: 320px){
+    @media (min-device-width: 320px){
         font-size: 20px;
     }
 
-    @media (min-width: 375px){
+    @media (min-device-width: 375px){
         font-size: 25px;
     }
 
-    @media (min-width: 450px){
+    @media (min-device-width: 450px){
         font-size: 25px;
     }
 
@@ -247,15 +247,15 @@ export const ReviewDirect = styled.h5`
     padding: 5px 0px 5px 0px;
     font-size: 20px;
 
-    @media (min-width: 320px){
+    @media (min-device-width: 320px){
         font-size: 15px;
     }
 
-    @media (min-width: 375px){
+    @media (min-device-width: 375px){
         font-size: 18px;
     }
 
-    @media (min-width: 450px){
+    @media (min-device-width: 450px){
         padding: 0px 5px;
         font-size: 20px;
     }

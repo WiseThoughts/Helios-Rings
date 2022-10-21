@@ -15,19 +15,19 @@ export const Wrapper = styled.div`
     &:hover{
     }
 
-    @media (max-width: 320px){
+    @media (max-device-width: 320px){
         display: felx;
         flex-direction: coloumn;
         width: auto;
     }
 
-    @media (max-width: 375px){
+    @media (max-device-width: 375px){
         display: felx;
         flex-direction: coloumn;
         width: auto;
     }
 
-    @media (max-width: 450px){
+    @media (max-device-width: 450px){
         display: felx;
         flex-direction: coloumn;
         width: auto;
@@ -60,12 +60,12 @@ export const NavbarItems = styled.a`
         transtion: 0.5s;
     }
 
-    @media (max-width: 320px){
+    @media (max-device-width: 320px){
         display: felx;
         flex-direction: coloumn;
     }
 
-    @media (max-width: 450px){
+    @media (max-device-width: 450px){
         display: felx;
         flex-direction: coloumn;
     }

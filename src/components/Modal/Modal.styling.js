@@ -37,7 +37,7 @@ export const ModalBox = styled.div`
     left: 2.75%;
   }
 
-  @media (min-width: 600px){
+  @media (min-device-width: 600px){
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -49,7 +49,7 @@ export const ModalBox = styled.div`
     left: 2%;
   }
 
-  @media (min-width: 768px){
+  @media (min-device-width: 768px){
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -61,7 +61,7 @@ export const ModalBox = styled.div`
     left: 2%;
   }
 
-  @media (min-width: 1024px){
+  @media (min-device-width: 1024px){
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -73,7 +73,7 @@ export const ModalBox = styled.div`
     left: 2%;
   }
 
-  @media (min-width: 1440px){
+  @media (min-device-width: 1440px){
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -85,7 +85,7 @@ export const ModalBox = styled.div`
     left: 5%;
   }
 
-  @media (min-width: 1920px){
+  @media (min-device-width: 1920px){
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -112,32 +112,32 @@ export const PicBox = styled.div`
     height: 50%;
   }
 
-  @media only screen and (min-width: 425px){
+  @media only screen and (min-device-width: 425px){
     width: 100%;
     height: 50%;
   }
 
-  @media only screen and  (min-width: 600px){
+  @media only screen and (min-device-width: 600px){
     width: 50%;
     height: 100%;
   }
 
-  @media only screen and (min-width: 768px){
+  @media only screen and (min-device-width: 768px){
     width: 50%;
     height: 100%;
   }
 
-  @media only screen and (min-width: 1024px){
+  @media only screen and (min-device-width: 1024px){
     width: 50%;
     height: 100%;
   }
 
-  @media only screen and (min-width: 1440px){
+  @media only screen and (min-device-width: 1440px){
     width: 50%;
     height: 100%;
   }
 
-  @media only screen and (min-width: 1920px){
+  @media only screen and (min-device-width: 1920px){
     width: 50%;
     height: 100%;
   }
@@ -161,33 +161,33 @@ export const TextBox = styled.div`
     height: 50%;
   }
 
-  @media only screen and (min-width: 425px){
+  @media only screen and (min-device-width: 425px){
     width: 100%;
     height: 50%;
   }
 
-  @media only screen and (min-width: 600px){
+  @media only screen and (min-device-width: 600px){
     width: 50%;
     height: 100%;
   }
 
 
-  @media only screen and (min-width: 768px){
+  @media only screen and (min-device-width: 768px){
     width: 50%;
     height: 100%;
   }
 
-  @media only screen and (min-width: 1024px){
+  @media only screen and (min-device-width: 1024px){
     width: 50%;
     height: 100%;
   }
 
-  @media only screen and (min-width: 1440px){
+  @media only screen and (min-device-width: 1440px){
     width: 50%;
     height: 100%;
   }
 
-  @media only screen and (min-width: 1920px){
+  @media only screen and (min-device-width: 1920px){
     width: 50%;
     height: 100%;
   }

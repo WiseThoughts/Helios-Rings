@@ -10,17 +10,17 @@ export const ContactDiv = styled.div`
         flex-direction: column;
     }
 
-    @media (min-width: 425px){
+    @media (min-device-width: 425px){
         display: flex;
         flex-direction: column;
     }
 
-    @media (min-width: 768px){
+    @media (min-device-width: 768px){
         display: flex;
         flex-direction: row;
     }
 
-    @media (min-width: 1440px){
+    @media (min-device-width: 1440px){
         display: flex;
         flex-direction: row;
     }
@@ -43,23 +43,23 @@ export const Form = styled.form`
         margin-left: 10%;
     }
 
-    @media (min-width: 375px){
+    @media (min-device-width: 375px){
         margin-left: 20%;
     }
 
-    @media (min-width: 425px){
+    @media (min-device-width: 425px){
         margin-left: 25%;
     }
 
-    @media (min-width: 768px){
+    @media (min-device-width: 768px){
         margin-left: 15%;
     }
 
-    @media (min-width: 1024px){
+    @media (min-device-width: 1024px){
         margin-left: 25%;
     }
 
-    @media (min-width: 1440px){
+    @media (min-device-width: 1440px){
         margin-left: 25%;
     }
 `
@@ -79,31 +79,31 @@ export const Name = styled.input`
         margin-bottom: 15px;
     }
 
-    @media (min-width: 375px){
+    @media (min-device-width: 375px){
         font-size: 20px;
         padding: 3px;
         margin-bottom: 15px;
     }
 
-    @media (min-width: 425px){
+    @media (min-device-width: 425px){
         font-size: 20px;
         padding: 3px;
         margin-bottom: 15px;
     }
 
-    @media (min-width: 768px){
+    @media (min-device-width: 768px){
         font-size: 25px;
         padding: 5px;
         margin-bottom: 20px;
     }
 
-    @media (min-width: 1024px){
+    @media (min-device-width: 1024px){
         font-size: 25px;
         padding: 5px;
         margin-bottom: 20px;
     }
 
-    @media (min-width: 1440px){
+    @media (min-device-width: 1440px){
         font-size: 25px;
         padding: 5px;
         margin-bottom: 20px;
@@ -125,31 +125,31 @@ export const Email = styled.input`
         margin-bottom: 15px;
     }
 
-    @media (min-width: 375px){
+    @media (min-device-width: 375px){
         font-size: 20px;
         padding: 3px;
         margin-bottom: 15px;
     }
 
-    @media (min-width: 425px){
+    @media (min-device-width: 425px){
         font-size: 20px;
         padding: 3px;
         margin-bottom: 15px;
     }
 
-    @media (min-width: 768px){
+    @media (min-device-width: 768px){
         font-size: 25px;
         padding: 5px;
         margin-bottom: 20px;
     }
 
-    @media (min-width: 1024px){
+    @media (min-device-width: 1024px){
         font-size: 25px;
         padding: 5px;
         margin-bottom: 20px;
     }
 
-    @media (min-width: 1440px){
+    @media (min-device-width: 1440px){
         font-size: 25px;
         padding: 5px;
         margin-bottom: 20px;
@@ -171,31 +171,31 @@ export const Message = styled.textarea`
         margin-bottom: 15px;
     }
 
-    @media (min-width: 375px){
+    @media (min-device-width: 375px){
         font-size: 20px;
         padding: 3px;
         margin-bottom: 15px;
     }
 
-    @media (min-width: 425px){
+    @media (min-device-width: 425px){
         font-size: 20px;
         padding: 3px;
         margin-bottom: 15px;
     }
 
-    @media (min-width: 768px){
+    @media (min-device-width: 768px){
         font-size: 25px;
         padding: 5px;
         margin-bottom: 20px;
     }
 
-    @media (min-width: 1024px){
+    @media (min-device-width: 1024px){
         font-size: 25px;
         padding: 5px;
         margin-bottom: 20px;
     }
 
-    @media (min-width: 1440px){
+    @media (min-device-width: 1440px){
         font-size: 25px;
         padding: 5px;
         margin-bottom: 20px;
@@ -234,7 +234,7 @@ export const ConatctOuter = styled.div`
         justify-content: flex-start;
     }
 
-    @media (min-width: 768px){
+    @media (min-device-width: 768px){
         width: 50%;
     }
 `
@@ -253,35 +253,35 @@ export const ContactBox = styled.div`
         width: 100%;
     }
 
-    @media (min-width: 375px){
+    @media (min-device-width: 375px){
         font-size: 25px;
         width: 100%;
     }
 
-    @media (min-width: 425px){
+    @media (min-device-width: 425px){
         font-size: 30px;
         width: 100%;
     }
 
-    @media (min-width: 768px){
+    @media (min-device-width: 768px){
         font-size: 25px;
         width: 75%;
         margin-left: 10%;
     }
 
-    @media (min-width: 830px){
+    @media (min-device-width: 830px){
         font-size: 25px;
         width: 75%;
         margin-left: 0;
     }
 
-    @media (min-width: 1024px){
+    @media (min-device-width: 1024px){
         font-size: 33px;
         width: 75%;
         margin-left: 0;
     }
 
-    @media (min-width: 1440px){
+    @media (min-device-width: 1440px){
         font-size: 40px;
         width: 75%;
         margin-left: -30%;

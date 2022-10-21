@@ -44,67 +44,67 @@ export const RImage = styled.img`
         width: 300px;
     }
 
-    @media (min-width: 425px){
+    @media (min-device-width: 425px){
         width: 370px;
     }
 
-    @media (min-width: 550px){
+    @media (min-device-width: 550px){
         width: 440px;
     }
 
-    @media (min-width: 650px){
+    @media (min-device-width: 650px){
         width: 285px;
     }
 
-    @media (min-width: 768px){
+    @media (min-device-width: 768px){
         width: 345px;
     }
 
-    @media (min-width: 838px){
+    @media (min-device-width: 838px){
         width: 250px;
     }
 
-    @media (min-width: 950px){
+    @media (min-device-width: 950px){
         width: 290px;
     }
 
-    @media (min-width: 1024px){
+    @media (min-device-width: 1024px){
         width: 310px;
     }
 
-    @media (min-width: 1200px){
+    @media (min-device-width: 1200px){
         width: 370px;
     }
 
-    @media (min-width: 1350px){
+    @media (min-device-width: 1350px){
         width: 420px;
     }
 
-    @media (min-width: 1440px){
+    @media (min-device-width: 1440px){
         width: 325px;
     }
 
-    @media (min-width: 1920px){
+    @media (min-device-width: 1920px){
         width: 440px;
     }
 
-    @media (min-width: 2200px){
+    @media (min-device-width: 2200px){
         width: 520px;
     }
 
-    @media (min-width: 2400px){
+    @media (min-device-width: 2400px){
         width: 570px;
     }
 
-    @media (min-width: 2560px){
+    @media (min-device-width: 2560px){
         width: 600px;
     }
 
-    @media (min-width: 2700px){
+    @media (min-device-width: 2700px){
         width: 640px;
     }
 
-    @media (min-width: 3000px){
+    @media (min-device-width: 3000px){
         width: 700px;
     }
 `

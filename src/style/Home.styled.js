@@ -10,7 +10,7 @@ export const SplitPage = styled.div`
         flex-direction: column-reverse;
     }
 
-    @media (min-width: 1440px){
+    @media (min-device-width: 1440px){
         display: flex;
         flex-direction: row;
     }
@@ -25,7 +25,7 @@ export const LeftSide = styled.div`
         padding-bottom: 20px;
     }
 
-    @media (min-width: 1440px){
+    @media (min-device-width: 1440px){
         width: 50%;
     }
 `
@@ -42,14 +42,14 @@ export const RightSide = styled.div`
         padding-bottom: 20px;
     }
 
-    @media (min-width: 1440px){
+    @media (min-device-width: 1440px){
         width: 50%;
         text-align: center;
         align-self: center;
         padding: 0;
     }
 
-    @media (min-width: 1920px){
+    @media (min-device-width: 1920px){
         width: 50%;
         text-align: center;
         align-self: center;
@@ -70,7 +70,7 @@ export const Splitimg = styled.img`
         border: 8px double black;
     }
 
-    @media (min-width: 1440px){
+    @media (min-device-width: 1440px){
         height: 800px;
         width: 90%;
         margin: 5px;
@@ -84,12 +84,12 @@ export const HomeHeader = styled.h1`
     padding: 0px 0px 25px 0px;
     font-size: 65px;
 
-    @media (min-width: 320px){
+    @media (min-device-width: 320px){
         font-size: 45px;
         padding: 0px 0px 10px 0px;
     }
 
-    @media (min-width: 450px){
+    @media (min-device-width: 450px){
         font-size: 50px;
         padding: 0px 10px 15px 10px;
     }
@@ -113,13 +113,13 @@ export const HomeSubHeader = styled.h2`
     font-size: 35px;
     text-decoration: underline;
 
-    @media (min-width: 320px){
+    @media (min-device-width: 320px){
         font-size: 25px;
         margin: 0px 20px;
         padding: 0px 0px 10px 0px;
     }
 
-    @media (min-width: 450px){
+    @media (min-device-width: 450px){
         font-size: 25px;
         margin: 0px 20px;
         padding: 0px 0px 10px 0px;
@@ -143,12 +143,12 @@ export const HomeDirect = styled.h5`
     padding: 10px 0px 10px 0px;
     font-size: 25px;
 
-    @media (min-width: 320px){
+    @media (min-device-width: 320px){
         font-size: 20px;
         padding: 10px 10px 10px 10px;
     }
 
-    @media (min-width: 450px){
+    @media (min-device-width: 450px){
         font-size: 20px;
         padding: 15px 15px 10px 15px;
     }
@@ -174,13 +174,13 @@ export const HomeButtons = styled.button`
     color: white;
     border: 8px double white;
 
-    @media (min-width: 320px){
+    @media (min-device-width: 320px){
         font-size: 20px;
         padding: 5px;
         border: 5px double white;
     }
 
-    @media (min-width: 450px){
+    @media (min-device-width: 450px){
         font-size: 20px;
         padding: 5px;
         border: 5px double white;

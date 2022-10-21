@@ -13,31 +13,31 @@ export const FooterContainer = styled.div`
     z-index: 1;
     border-top: 3px solid white;
 
-    @media (min-width: 320px){
+    @media (min-device-width: 320px){
         width: auto;
     }
 
-    @media (min-width: 375px){
+    @media (min-device-width: 375px){
         width: auto;
     }
 
-    @media (min-width: 450px){
+    @media (min-device-width: 450px){
         width: auto;
     }
 
-    @media (min-width: 768px){
+    @media (min-device-width: 768px){
         width: 92%;
     }
 
-    @media (min-width: 1024px){
+    @media (min-device-width: 1024px){
         width: 94%;
     }
 
-    @media (min-width: 1440px){
+    @media (min-device-width: 1440px){
         width: 95.8%;
     }
 
-    @media (min-width: 1920px){
+    @media (min-device-width: 1920px){
         width: 96.87%;
     }
 `
@@ -48,11 +48,11 @@ export const FooterLinksItems = styled.a`
     color: white;
     padding: 0px 17px;
 
-    @media (min-width: 320px){
+    @media (min-device-width: 320px){
         font-size: 20px;
     }
 
-    @media (min-width: 450px){
+    @media (min-device-width: 450px){
         font-size: 20px;
     }
 `

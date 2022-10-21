@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { IoChevronBackSharp, IoChevronForwardSharp } from "react-icons/io5";
-import { Backward, Forward, ReviewImage, Pad, FBArrows} from "./ModalSlides.styled";
+import { Backward, Forward, ModalImage, Pad, FBArrows} from "./ModalSlides.styled";
 
 
 function ModalSlides({ringPicArray}) {
@@ -21,7 +21,7 @@ function ModalSlides({ringPicArray}) {
     return (
     <div>
         <Pad>
-            <ReviewImage src={ringPicArray[currentSlide].Img}></ReviewImage>
+            <ModalImage src={ringPicArray[currentSlide].Img}></ModalImage>
             <FBArrows>
                 <Backward onClick={back}><IoChevronBackSharp /></Backward>
                 <Forward onClick={forward}><IoChevronForwardSharp/></Forward>

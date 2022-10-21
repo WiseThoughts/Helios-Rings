@@ -9,7 +9,7 @@ export const Pad =styled.div`
     align-items: center;
 `
 
-export const ReviewImage = styled.img`
+export const ModalImage = styled.img`
     max-width: 80%;
     max-height: 80%;
     margin: 5px;
@@ -32,77 +32,77 @@ export const ReviewImage = styled.img`
         padding: 3px;
     }
 
-    @media (min-width: 425px){
+    @media (min-device-width: 425px){
         max-width: 90%;
         max-height: 90%;
         border: 5px solid black; 
         padding: 3px;
     }
 
-    @media (min-width: 550px){
+    @media (min-device-width: 550px){
         max-width: 90%;
         max-height: 90%;
         border: 5px solid black; 
         padding: 3px;
     }
 
-    @media (min-width: 650px){
+    @media (min-device-width: 650px){
         max-width: 90%;
         max-height: 90%;
         border: 5px solid black; 
         padding: 3px;
     }
 
-    @media (min-width: 768px){
+    @media (min-device-width: 768px){
         max-width: 90%;
         max-height: 90%;
         border: 5px solid black; 
         padding: 3px;
     }
 
-    @media (min-width: 838px){
+    @media (min-device-width: 838px){
         max-width: 90%;
         max-height: 90%;
         border: 5px solid black; 
         padding: 3px;
     }
 
-    @media (min-width: 950px){
+    @media (min-device-width: 950px){
         max-width: 90%;
         max-height: 90%;
         border: 5px solid black; 
         padding: 3px;
     }
 
-    @media (min-width: 1024px){
+    @media (min-device-width: 1024px){
         max-width: 90%;
         max-height: 90%;
         border: 5px solid black; 
         padding: 3px;
     }
 
-    @media (min-width: 1200px){
+    @media (min-device-width: 1200px){
         max-width: 90%;
         max-height: 90%;
         border: 5px solid black; 
         padding: 3px;
     }
 
-    @media (min-width: 1350px){
+    @media (min-device-width: 1350px){
         max-width: 90%;
         max-height: 90%;
         border: 5px solid black; 
         padding: 3px;
     }
 
-    @media (min-width: 1440px){
+    @media (min-device-width: 1440px){
         max-width: 80%;
         max-height: 80%;
         border: 5px solid black; 
         padding: 3px;
     }
 
-    @media (min-width: 1920px){
+    @media (min-device-width: 1920px){
         max-width: 90%;
         max-height: 90%;
         border: 5px solid black; 
