@@ -151,7 +151,7 @@ export const TextBox = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 50%;
   height: 100%;
 
   @media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape){
