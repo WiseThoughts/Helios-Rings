@@ -67,8 +67,8 @@ export const ReviewImage = styled.img`
     }
 
     @media (min-width: 1024px){
-        max-width: 95%;
-        max-height: 95%;
+        max-width: 90%;
+        max-height: 90%;
         border: 5px solid black; 
         padding: 3px;
     }
