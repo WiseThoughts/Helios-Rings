@@ -25,8 +25,6 @@ export const ModalBox = styled.div`
   left: 7.25%;
   z-index: 10;
 
-  
-
   @media only screen and (min-device-width: 320px) and (max-device-width: 425px){
     position: fixed;
     display: flex;
@@ -104,12 +102,6 @@ export const PicBox = styled.div`
   width: 50%;
   height: 100%;
 
-  @media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape){
-    width: 50%;
-    height: 100%;
-  }
-
-
   @media only screen and (min-device-width: 320px) and (max-device-width: 424px){
     width: 100%;
     height: 50%;
@@ -153,11 +145,6 @@ export const TextBox = styled.div`
   align-items: center;
   width: 50%;
   height: 100%;
-
-  @media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape){
-    width: 50%;
-    height: 100%;
-  }
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 424px){
     width: 100%;
