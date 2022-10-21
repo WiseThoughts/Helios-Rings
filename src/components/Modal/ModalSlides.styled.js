@@ -96,8 +96,8 @@ export const ModalImage = styled.img`
     }
 
     @media (min-device-width: 1440px){
-        max-width: 80%;
-        max-height: 80%;
+        max-width: 90%;
+        max-height: 90%;
         border: 5px solid black; 
         padding: 3px;
     }

@@ -99,6 +99,8 @@ export const ModalBox = styled.div`
 `
 
 export const PicBox = styled.div`
+  display: flex;
+  align-content: center;
   width: 50%;
   height: 100%;
 
@@ -123,22 +125,22 @@ export const PicBox = styled.div`
   }
 
   @media only screen and (min-device-width: 768px){
-    width: 50%;
+    width: 60%;
     height: 100%;
   }
 
   @media only screen and (min-device-width: 1024px){
-    width: 50%;
+    width: 65%;
     height: 100%;
   }
 
   @media only screen and (min-device-width: 1440px){
-    width: 50%;
+    width: 70%;
     height: 100%;
   }
 
   @media only screen and (min-device-width: 1920px){
-    width: 50%;
+    width: 70%;
     height: 100%;
   }
 `
@@ -173,22 +175,22 @@ export const TextBox = styled.div`
 
 
   @media only screen and (min-device-width: 768px){
-    width: 50%;
+    width: 40%;
     height: 100%;
   }
 
   @media only screen and (min-device-width: 1024px){
-    width: 50%;
+    width: 35%;
     height: 100%;
   }
 
   @media only screen and (min-device-width: 1440px){
-    width: 50%;
+    width: 30%;
     height: 100%;
   }
 
   @media only screen and (min-device-width: 1920px){
-    width: 50%;
+    width: 30%;
     height: 100%;
   }
 `
