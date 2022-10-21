@@ -4,7 +4,7 @@ import {FooterContainer, FooterLinksItems, FooterLinkTitle, FooterLink } from '.
 const Footer = () => {
     
     return (
-    <FooterContainer>
+    <FooterContainer className="sizing">
         <FooterLinksItems>
             <FooterLinkTitle>SilverDale Rings</FooterLinkTitle>
             <FooterLink to='/contact'>Contact</FooterLink>

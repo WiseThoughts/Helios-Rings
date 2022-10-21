@@ -8,38 +8,10 @@ export const FooterContainer = styled.div`
     align-items: center;
     background-color: black;
     padding: 30px;
-    width: max-fit;
-    position: absolute;
+    width: auto;
+    position: relative;
     z-index: 1;
     border-top: 3px solid white;
-
-    @media (min-device-width: 320px){
-        width: auto;
-    }
-
-    @media (min-device-width: 375px){
-        width: auto;
-    }
-
-    @media (min-device-width: 450px){
-        width: auto;
-    }
-
-    @media (min-device-width: 768px){
-        width: 92%;
-    }
-
-    @media (min-device-width: 1024px){
-        width: 94%;
-    }
-
-    @media (min-device-width: 1440px){
-        width: 95.8%;
-    }
-
-    @media (min-device-width: 1920px){
-        width: 96.87%;
-    }
 `
 
 export const FooterLinksItems = styled.a`
