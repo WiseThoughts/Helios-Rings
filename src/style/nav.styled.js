@@ -33,17 +33,6 @@ export const Wrapper = styled.div`
         width: auto;
     }
 
-    @media (min-width: 768px){
-
-    }
-
-    @media (min-width: 1024px){
-
-    }
-
-    @media (max-width: 1440px){
-        
-    }
 `;
 
 export const NavbarItems = styled.a`

@@ -35,7 +35,7 @@ const Collection = () => {
         Img2: Ring3,
         Img3: Ring4,
         Img4: Ring5,
-        ringdes:"trail: ring 2"
+        ringdes:"This is a set of five example rings. They include; a 6mm size 11 tungsten ring with Blue opal, a 6mm size 11 tungsten ring with Orange opal, a 8mm size 11 white ceramic ring with spring-green opal & black fire #2 opal, a 8mm size 11 Black ceramic ring with abolone insert, a 8mm size 10.5 flamed Timascus ring with a carbon fiber liner."
         },
         {
         id:2,

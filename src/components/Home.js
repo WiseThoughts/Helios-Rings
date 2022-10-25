@@ -36,7 +36,7 @@ function Home() {
         </LeftSide>
         <RightSide>
         <div>
-            <HomeHeader>Welcome to SilverDale Rings!</HomeHeader>
+            <HomeHeader>Welcome to Helios Rings!</HomeHeader>
             <HomeSubHeader>You're One stop shop for Custom one of a kind rings</HomeSubHeader>
         </div>
 

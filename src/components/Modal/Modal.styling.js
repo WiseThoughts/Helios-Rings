@@ -261,3 +261,39 @@ export const ModalButtons = styled.button`
 
   }
 `
+
+export const RingDescription = styled.p`
+  font-size: 30px;
+  padding: 10px;
+  font-weight: bold;
+  width: 90%;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 424px){
+    font-size: 18px;
+  }
+
+  @media only screen and (min-device-width: 425px){
+    font-size: 20px;
+  }
+
+  @media only screen and (min-device-width: 600px){
+    font-size: 20px;
+  }
+
+
+  @media only screen and (min-device-width: 768px){
+    font-size: 20px;
+  }
+
+  @media only screen and (min-device-width: 1024px){
+    font-size: 25px;
+  }
+
+  @media only screen and (min-device-width: 1440px){
+    font-size: 25px;
+  }
+
+  @media only screen and (min-device-width: 1920px){
+    font-size: 35px;
+  }
+`

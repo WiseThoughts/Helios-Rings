@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Wrapper, NavbarItems, Logo, } from "../style/nav.styled";
 import React from "react";
 import "../style/nav.css";
-import logo from "../images/wisethoughtslogo.png";
+import logo from "../images/helios-logo-1.png";
 
 
 const Nav = () => {
